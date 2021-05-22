@@ -14,6 +14,8 @@
 .ipynb_checkpoints
 .virtual_documents
 
+/data/
+
 # Session Data files
 .RData
 
