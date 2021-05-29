@@ -1,4 +1,4 @@
-Image,Bird_Name
+Image,Bird_Name,Irish_Name,Scientific_Name,Bird_Family
 "[[[193 145   9]
   [189 141   5]
   [185 137   1]
@@ -47,7 +47,7 @@ Image,Bird_Name
   ...
   [225 223 211]
   [225 223 211]
-  [225 223 211]]]",Arctic Tern
+  [225 223 211]]]",Arctic Tern,Geabhróg artach,Sterna paradisaea,Terns
 "[[[ 33  72  87]
   [ 35  74  89]
   [ 37  76  93]
@@ -96,7 +96,7 @@ Image,Bird_Name
   ...
   [ 95 125 151]
   [101 131 157]
-  [104 134 160]]]",Balearic Shearwater
+  [104 134 160]]]",Balearic Shearwater,Cánóg Bhailéarach,Puffinus mauretanicus,Tubenoses
 "[[[52 64 88]
   [55 67 91]
   [57 69 93]
@@ -145,7 +145,7 @@ Image,Bird_Name
   ...
   [50 61 81]
   [49 60 80]
-  [48 59 79]]]",Bar-tailed Godwit
+  [48 59 79]]]",Bar-tailed Godwit,Guilbneach stríocearrach,Limosa lapponica,Waders
 "[[[ 89  78  46]
   [ 88  77  45]
   [ 85  74  42]
@@ -194,7 +194,7 @@ Image,Bird_Name
   ...
   [ 34  40  14]
   [ 34  40  14]
-  [ 36  42  16]]]",Barn Owl
+  [ 36  42  16]]]",Barn Owl,Scréachóg reilige,Tyto alba,Owls
 "[[[130 112  74]
   [129 111  73]
   [127 109  71]
@@ -243,7 +243,7 @@ Image,Bird_Name
   ...
   [ 47  67  32]
   [ 44  64  29]
-  [ 41  61  26]]]",Barnacle Goose
+  [ 41  61  26]]]",Barnacle Goose,Gé ghiúrainn,Branta leucopsis,Geese
 "[[[134 162 186]
   [132 160 184]
   [130 158 182]
@@ -292,7 +292,7 @@ Image,Bird_Name
   ...
   [143 169 194]
   [144 170 195]
-  [140 166 191]]]",Bean Goose
+  [140 166 191]]]",Bean Goose,Síolghé,Anser fabalis,Geese
 "[[[36 40 26]
   [45 49 35]
   [45 49 35]
@@ -341,7 +341,7 @@ Image,Bird_Name
   ...
   [30 34 20]
   [30 34 19]
-  [30 34 19]]]",Bewick’s Swan
+  [30 34 19]]]",Bewick’s Swan,Eala Bewick,Cygnus columbianus,Swans
 "[[[ 36  18   4]
   [ 33  15   1]
   [ 42  24  10]
@@ -390,7 +390,7 @@ Image,Bird_Name
   ...
   [153 150 143]
   [149 146 139]
-  [147 144 137]]]",Black Brant
+  [147 144 137]]]",Black Brant,Cadhan,Branta bernicla nigricans,Geese
 "[[[127 153 170]
   [127 153 170]
   [127 153 170]
@@ -439,7 +439,7 @@ Image,Bird_Name
   ...
   [ 41  39  18]
   [ 46  44  23]
-  [ 53  51  30]]]",Black Guillemot
+  [ 53  51  30]]]",Black Guillemot,Foracha dhubh,Cepphus grylle,Auks
 "[[[77 84 43]
   [83 90 49]
   [85 93 52]
@@ -488,7 +488,7 @@ Image,Bird_Name
   ...
   [86 87 56]
   [89 90 59]
-  [98 99 67]]]",Black Redstart
+  [98 99 67]]]",Black Redstart,Earrdheargán dubh,Phoenicurus ochruros gibraltarensis,Flycatchers (chats)
 "[[[ 80  95  28]
   [ 80  95  28]
   [ 80  95  28]
@@ -537,7 +537,7 @@ Image,Bird_Name
   ...
   [152 135  92]
   [151 134  91]
-  [151 134  91]]]",Black-headed Gull
+  [151 134  91]]]",Black-headed Gull,Sléibhín,Larus ridibundus,Hooded Gulls
 "[[[105 113 115]
   [105 113 115]
   [105 113 115]
@@ -586,7 +586,7 @@ Image,Bird_Name
   ...
   [148 136 122]
   [148 136 122]
-  [148 136 122]]]",Black-necked Grebe
+  [148 136 122]]]",Black-necked Grebe,Foitheach píbdhubh,Podiceps nigricollis,Grebes
 "[[[123 132 139]
   [124 133 140]
   [124 133 140]
@@ -635,7 +635,7 @@ Image,Bird_Name
   ...
   [111 121 123]
   [111 121 123]
-  [111 121 123]]]",Black-tailed Godwit
+  [111 121 123]]]",Black-tailed Godwit,Guilbneach earrdhubh,Limosa limosa,Waders
 "[[[162 176 202]
   [161 175 201]
   [160 174 200]
@@ -684,7 +684,7 @@ Image,Bird_Name
   ...
   [158 177 210]
   [158 177 210]
-  [159 178 211]]]",Black-throated Diver
+  [159 178 211]]]",Black-throated Diver,Lóma Artach,Gavia arctica,Divers
 "[[[103 129 102]
   [100 126  99]
   [ 95 121  94]
@@ -733,7 +733,7 @@ Image,Bird_Name
   ...
   [ 55  42  52]
   [ 55  41  54]
-  [ 55  41  56]]]",Blackbird
+  [ 55  41  56]]]",Blackbird,Lon dubh,Turdus merula,Thrushes
 "[[[200 212 172]
   [207 215 178]
   [213 214 182]
@@ -782,7 +782,7 @@ Image,Bird_Name
   ...
   [100 100  64]
   [100 100  64]
-  [ 98 100  63]]]",Blackcap
+  [ 98 100  63]]]",Blackcap,Caipín dubh,Sylvia atricapilla,Warblers
 "[[[ 89 172 226]
   [ 88 171 225]
   [ 88 171 225]
@@ -831,7 +831,7 @@ Image,Bird_Name
   ...
   [107 184 228]
   [107 184 228]
-  [107 184 228]]]",Blue Tit
+  [107 184 228]]]",Blue Tit,Meantán gorm,Cyanistes caeruleus,Tits
 "[[[ 60  60  50]
   [ 61  61  51]
   [ 61  61  51]
@@ -880,7 +880,7 @@ Image,Bird_Name
   ...
   [ 52 104  21]
   [ 55 107  24]
-  [ 56 108  23]]]",Brambling
+  [ 56 108  23]]]",Brambling,Breacán,Fringilla montifringilla,Finches
 "[[[157 171 184]
   [157 171 184]
   [156 170 183]
@@ -929,7 +929,7 @@ Image,Bird_Name
   ...
   [158 160 172]
   [161 163 175]
-  [159 162 171]]]",Brent Goose (Dark-bellied)
+  [159 162 171]]]",Brent Goose (Dark-bellied),Cadhan,Branta bernicla bernicla,Geese
 "[[[153 176 190]
   [153 176 190]
   [153 176 190]
@@ -978,7 +978,7 @@ Image,Bird_Name
   ...
   [ 78  86  35]
   [ 74  82  31]
-  [ 73  81  30]]]",Brent Goose (Light-bellied)
+  [ 73  81  30]]]",Brent Goose (Light-bellied),Cadhan,Branta bernicla hrota,Geese
 "[[[100 109  64]
   [105 113  72]
   [107 115  78]
@@ -1027,7 +1027,7 @@ Image,Bird_Name
   ...
   [ 88 104  75]
   [ 89 105  76]
-  [ 86 103  71]]]",Buff-breasted Sandpiper
+  [ 86 103  71]]]",Buff-breasted Sandpiper,Gobadán broinn-donnbhuí,Tryngites subruficollis,Sandpipers
 "[[[ 45  42  23]
   [ 45  42  23]
   [ 46  43  24]
@@ -1076,7 +1076,7 @@ Image,Bird_Name
   ...
   [101  96  64]
   [101  96  64]
-  [ 99  94  62]]]",Bullfinch
+  [ 99  94  62]]]",Bullfinch,Corcrán coille,Pyrrhula pyrrhula,Finches
 "[[[131 142  48]
   [134 145  51]
   [136 147  53]
@@ -1125,7 +1125,7 @@ Image,Bird_Name
   ...
   [133 137  26]
   [133 137  26]
-  [133 137  26]]]",Buzzard
+  [133 137  26]]]",Buzzard,Clamhán,Buteo buteo,Raptors
 "[[[179 178 183]
   [179 178 183]
   [179 178 183]
@@ -1174,7 +1174,7 @@ Image,Bird_Name
   ...
   [136 141 144]
   [136 141 144]
-  [136 141 144]]]",Canada Goose
+  [136 141 144]]]",Canada Goose,Gé Cheanadach,Branta canadensis,Geese
 "[[[100  98  60]
   [ 99  97  59]
   [ 99  97  59]
@@ -1223,7 +1223,7 @@ Image,Bird_Name
   ...
   [128 115  70]
   [123 110  65]
-  [125 111  66]]]",Cattle Egret
+  [125 111  66]]]",Cattle Egret,,Bubulcus ibis,Cormorants (Egrets)
 "[[[ 65  71  37]
   [ 68  74  40]
   [ 73  76  45]
@@ -1272,7 +1272,7 @@ Image,Bird_Name
   ...
   [ 98 104  56]
   [ 95 101  53]
-  [ 95  98  51]]]",Chaffinch
+  [ 95  98  51]]]",Chaffinch,Rí Rua,Fringilla coelebs,Finches
 "[[[152 125  82]
   [150 123  80]
   [148 121  78]
@@ -1321,7 +1321,7 @@ Image,Bird_Name
   ...
   [ 14  18   3]
   [ 13  17   2]
-  [ 12  16   1]]]",Chiffchaff
+  [ 12  16   1]]]",Chiffchaff,Tiuf-teaf,Phylloscopus collybita,Warblers
 "[[[114 118 103]
   [124 126 112]
   [119 121 107]
@@ -1370,7 +1370,7 @@ Image,Bird_Name
   ...
   [112 121 100]
   [113 122 101]
-  [112 121 100]]]",Chough
+  [112 121 100]]]",Chough,Cág cosdearg,Pyrrhocorax pyrrhocorax,Crows
 "[[[166  75   4]
   [167  74   4]
   [167  74   4]
@@ -1419,7 +1419,7 @@ Image,Bird_Name
   ...
   [193 120  41]
   [192 119  40]
-  [191 118  39]]]",Coal Tit
+  [191 118  39]]]",Coal Tit,Meantán dubh,Periparus ater,Tits
 "[[[ 29  62 107]
   [ 30  61 107]
   [ 31  62 108]
@@ -1468,7 +1468,7 @@ Image,Bird_Name
   ...
   [ 29  61 102]
   [ 26  58  99]
-  [ 24  56  95]]]",Collared Dove
+  [ 24  56  95]]]",Collared Dove,Fearán baicdhubh,Streptopelia decaocto,Doves
 "[[[ 55  60  89]
   [ 56  61  90]
   [ 56  61  90]
@@ -1517,7 +1517,7 @@ Image,Bird_Name
   ...
   [130 145 168]
   [131 146 169]
-  [132 147 170]]]",Common Gull
+  [132 147 170]]]",Common Gull,Faoileán bán,Larus canus,Gulls
 "[[[127 119 117]
   [129 121 119]
   [130 122 120]
@@ -1566,7 +1566,7 @@ Image,Bird_Name
   ...
   [165 145  48]
   [173 153  56]
-  [178 157  64]]]",Common Sandpiper
+  [178 157  64]]]",Common Sandpiper,Gobadán coiteann,Actitus hypoleucos,Sandpipers
 "[[[179 185 185]
   [179 185 185]
   [178 184 184]
@@ -1615,7 +1615,7 @@ Image,Bird_Name
   ...
   [178 183 186]
   [178 183 186]
-  [178 183 186]]]",Common Scoter
+  [178 183 186]]]",Common Scoter,Scótar,Melanitta nigra,Ducks
 "[[[ 74 156 240]
   [ 75 157 241]
   [ 75 157 241]
@@ -1664,7 +1664,7 @@ Image,Bird_Name
   ...
   [ 84 163 238]
   [ 78 161 239]
-  [ 78 161 239]]]",Common Tern
+  [ 78 161 239]]]",Common Tern,Geabhróg,Sterna hirundo,Terns
 "[[[143 149  61]
   [143 149  61]
   [143 149  61]
@@ -1713,7 +1713,7 @@ Image,Bird_Name
   ...
   [155 162  82]
   [159 164  84]
-  [162 165  84]]]",Coot
+  [162 165  84]]]",Coot,Cearc cheannann,Fulica atra,Crakes & Rails
 "[[[ 23  81 118]
   [ 23  81 118]
   [ 25  81 116]
@@ -1762,7 +1762,7 @@ Image,Bird_Name
   ...
   [ 20  80  91]
   [ 20  80  91]
-  [ 20  80  91]]]",Cormorant
+  [ 20  80  91]]]",Cormorant,Broigheall,Phalacrocorax carbo,Cormorants
 "[[[115 107  61]
   [115 107  61]
   [115 107  61]
@@ -1811,7 +1811,7 @@ Image,Bird_Name
   ...
   [130 120  67]
   [130 120  67]
-  [130 120  67]]]",Corn Bunting
+  [130 120  67]]]",Corn Bunting,Gealóg bhuachair,Miliaria calandra,Buntings
 "[[[115 118  61]
   [122 125  68]
   [129 132  75]
@@ -1860,7 +1860,7 @@ Image,Bird_Name
   ...
   [ 94 113  34]
   [ 94 113  34]
-  [ 94 112  36]]]",Corncrake
+  [ 94 112  36]]]",Corncrake,Traonach,Crex crex,Crakes & Rails
 "[[[159 169 178]
   [158 168 177]
   [158 168 177]
@@ -1909,7 +1909,7 @@ Image,Bird_Name
   ...
   [132 143 149]
   [130 141 147]
-  [129 140 146]]]",Cory’s Shearwater
+  [129 140 146]]]",Cory’s Shearwater,Cánóg Cory,Calonectris diomedia,Tubenoses
 "[[[119 157 196]
   [120 158 197]
   [120 158 197]
@@ -1958,7 +1958,7 @@ Image,Bird_Name
   ...
   [ 49  35  22]
   [ 51  35  19]
-  [ 44  29  10]]]",Crossbill
+  [ 44  29  10]]]",Crossbill,Crosghob,Loxia curvirostra,Finches
 "[[[ 40  41  43]
   [ 40  41  43]
   [ 40  41  43]
@@ -2007,7 +2007,7 @@ Image,Bird_Name
   ...
   [ 41  40  45]
   [ 42  41  46]
-  [ 43  42  47]]]",Cuckoo
+  [ 43  42  47]]]",Cuckoo,Cuach,Cuculus canorus,Cuckoo
 "[[[136 143 109]
   [136 143 109]
   [136 143 109]
@@ -2056,7 +2056,7 @@ Image,Bird_Name
   ...
   [181 166 125]
   [181 166 125]
-  [182 167 126]]]",Curlew
+  [182 167 126]]]",Curlew,Crotach,Numenius arquata,Waders
 "[[[188 187 182]
   [141 140 135]
   [148 147 143]
@@ -2105,7 +2105,7 @@ Image,Bird_Name
   ...
   [188 188 180]
   [187 188 180]
-  [216 217 209]]]",Curlew Sandpiper
+  [216 217 209]]]",Curlew Sandpiper,Gobadán crotaigh,Calidris ferruginea,Sandpipers
 "[[[ 90  95  99]
   [ 90  95  99]
   [ 90  95  98]
@@ -2154,7 +2154,7 @@ Image,Bird_Name
   ...
   [ 95  96  91]
   [ 95  96  91]
-  [ 94  95  90]]]",Dipper
+  [ 94  95  90]]]",Dipper,Gabha dubh,Cinclus cinclus,Dippers
 "[[[132 148  75]
   [128 144  71]
   [123 139  66]
@@ -2203,7 +2203,7 @@ Image,Bird_Name
   ...
   [127 139  65]
   [126 138  64]
-  [125 137  63]]]",Dunlin
+  [125 137  63]]]",Dunlin,Breacóg,Calidris alpina,Waders
 "[[[ 25  43   5]
   [ 26  44   4]
   [ 28  46   4]
@@ -2252,7 +2252,7 @@ Image,Bird_Name
   ...
   [121 122  90]
   [120 121  89]
-  [118 119  87]]]",Dunnock
+  [118 119  87]]]",Dunnock,Donnóg,Prunella modularis,Dunnocks
 "[[[ 32  36  45]
   [ 33  37  46]
   [ 34  38  47]
@@ -2301,7 +2301,7 @@ Image,Bird_Name
   ...
   [ 38  46  33]
   [ 39  47  36]
-  [ 40  48  37]]]",Eider
+  [ 40  48  37]]]",Eider,Éadar,Somateria mollissima,Ducks
 "[[[188 238 249]
   [186 236 247]
   [183 233 244]
@@ -2350,7 +2350,7 @@ Image,Bird_Name
   ...
   [190 232 244]
   [190 232 244]
-  [190 232 244]]]",Feral Pigeon
+  [190 232 244]]]",Feral Pigeon,Colm aille,Columba livia f. domestica,Pigeons & Doves
 "[[[ 61  70  43]
   [ 62  71  44]
   [ 62  70  46]
@@ -2399,7 +2399,7 @@ Image,Bird_Name
   ...
   [154 159 139]
   [156 161 141]
-  [159 163 146]]]",Fieldfare
+  [159 163 146]]]",Fieldfare,Sacán,Turdus pilaris,Thrushes
 "[[[123 116  90]
   [126 119  93]
   [130 123  97]
@@ -2448,7 +2448,7 @@ Image,Bird_Name
   ...
   [150 129  82]
   [150 129  82]
-  [150 129  82]]]",Firecrest
+  [150 129  82]]]",Firecrest,Lasairchíor,Regulus ignicapillus,Kinglets
 "[[[ 49  46  41]
   [ 38  35  30]
   [ 26  23  18]
@@ -2497,7 +2497,7 @@ Image,Bird_Name
   ...
   [136 124 110]
   [149 135 122]
-  [154 140 129]]]",Fulmar
+  [154 140 129]]]",Fulmar,Fulmaire,Fulmarus glacialis,Tubenoses
 "[[[ 96 131 163]
   [ 96 131 163]
   [ 96 131 163]
@@ -2546,7 +2546,7 @@ Image,Bird_Name
   ...
   [106 136 160]
   [105 135 159]
-  [104 134 158]]]",Gadwall
+  [104 134 158]]]",Gadwall,Gadual,Anas strepera,Ducks
 "[[[176 184 195]
   [175 183 194]
   [174 182 193]
@@ -2595,7 +2595,7 @@ Image,Bird_Name
   ...
   [204 210 222]
   [208 212 224]
-  [210 214 226]]]",Gannet
+  [210 214 226]]]",Gannet,Gainead,Morus bassana,Gannet
 "[[[133 160  67]
   [133 158  66]
   [133 158  66]
@@ -2644,7 +2644,7 @@ Image,Bird_Name
   ...
   [ 60  75   6]
   [ 45  58   4]
-  [ 44  55  12]]]",Garden Warbler
+  [ 44  55  12]]]",Garden Warbler,Ceolaire garraí,Sylvia borin,Warblers
 "[[[119 149  77]
   [120 150  78]
   [122 149  78]
@@ -2693,7 +2693,7 @@ Image,Bird_Name
   ...
   [ 62  80  30]
   [ 67  83  34]
-  [ 78  94  45]]]",Garganey
+  [ 78  94  45]]]",Garganey,Praslacha shamhraidh,Anas querquedula,Ducks
 "[[[ 46  60  73]
   [ 47  61  74]
   [ 47  61  74]
@@ -2742,7 +2742,7 @@ Image,Bird_Name
   ...
   [ 83  85  82]
   [ 80  82  79]
-  [ 78  80  77]]]",Glaucous Gull
+  [ 78  80  77]]]",Glaucous Gull,Faoileán glas,Larus hyperboreus,Gulls
 "[[[81 74 56]
   [80 73 55]
   [79 72 54]
@@ -2791,7 +2791,7 @@ Image,Bird_Name
   ...
   [28 29 23]
   [28 29 23]
-  [28 29 23]]]",Goldcrest
+  [28 29 23]]]",Goldcrest,Cíorbhuí,Regulus regulus,Kinglets
 "[[[201 176 146]
   [202 177 147]
   [204 179 149]
@@ -2840,7 +2840,7 @@ Image,Bird_Name
   ...
   [189 155 110]
   [189 155 110]
-  [189 155 110]]]",Golden Eagle
+  [189 155 110]]]",Golden Eagle,Iolar firéan,Aquila chrysaetos,Raptors
 "[[[172 143 101]
   [171 142 100]
   [172 143 101]
@@ -2889,7 +2889,7 @@ Image,Bird_Name
   ...
   [ 85  93  33]
   [ 81  89  30]
-  [ 85  93  34]]]",Golden Plover
+  [ 85  93  34]]]",Golden Plover,Feadóg bhuí,Pluvialis apricaria,Plovers
 "[[[159 169 171]
   [158 168 170]
   [158 168 170]
@@ -2938,7 +2938,7 @@ Image,Bird_Name
   ...
   [121 134 140]
   [123 136 142]
-  [127 141 144]]]",Goldeneye
+  [127 141 144]]]",Goldeneye,Órshúileach,Bucephala clangula,Ducks
 "[[[ 81 121  68]
   [ 80 119  66]
   [ 75 112  60]
@@ -2987,7 +2987,7 @@ Image,Bird_Name
   ...
   [ 38  61  19]
   [ 34  59  17]
-  [ 32  57  15]]]",Goldfinch
+  [ 32  57  15]]]",Goldfinch,Lasair choille,Carduelis carduelis,Finches
 "[[[66 67 51]
   [69 70 54]
   [72 73 57]
@@ -3036,7 +3036,7 @@ Image,Bird_Name
   ...
   [66 63 54]
   [71 68 59]
-  [75 72 63]]]",Goosander
+  [75 72 63]]]",Goosander,Síolta mhór,Mergus merganser,Ducks
 "[[[22 34 22]
   [22 34 22]
   [22 36 23]
@@ -3085,7 +3085,7 @@ Image,Bird_Name
   ...
   [72 67 35]
   [72 68 33]
-  [75 68 39]]]",Goshawk
+  [75 68 39]]]",Goshawk,,Accipiter gentilis,Raptors
 "[[[ 92  86  52]
   [ 91  85  51]
   [ 89  83  49]
@@ -3134,7 +3134,7 @@ Image,Bird_Name
   ...
   [ 66  60  48]
   [ 66  60  46]
-  [ 66  60  46]]]",Grasshopper Warbler
+  [ 66  60  46]]]",Grasshopper Warbler,Ceolaire casarnaí,Locustella naevia,Warblers
 "[[[118 145 164]
   [118 145 164]
   [118 145 164]
@@ -3183,7 +3183,7 @@ Image,Bird_Name
   ...
   [ 49  47  32]
   [ 50  48  33]
-  [ 53  51  36]]]",Great Black-backed Gull
+  [ 53  51  36]]]",Great Black-backed Gull,Droimneach mór,Larus marinus,White-headed gulls
 "[[[195 193 194]
   [195 193 194]
   [195 193 194]
@@ -3232,7 +3232,7 @@ Image,Bird_Name
   ...
   [198 200 199]
   [199 201 200]
-  [199 201 200]]]",Great Crested Grebe
+  [199 201 200]]]",Great Crested Grebe,Foitheach mór,Podiceps cristatus,Grebes
 "[[[155 177 218]
   [156 178 219]
   [157 179 220]
@@ -3281,7 +3281,7 @@ Image,Bird_Name
   ...
   [182 189 205]
   [182 189 205]
-  [184 191 207]]]",Great Northern Diver
+  [184 191 207]]]",Great Northern Diver,Lóma mór,Gavia immer,Divers
 "[[[196 200 212]
   [195 199 211]
   [191 195 207]
@@ -3330,7 +3330,7 @@ Image,Bird_Name
   ...
   [ 95  75  42]
   [ 93  73  40]
-  [112  92  59]]]",Great Skua
+  [112  92  59]]]",Great Skua,Meirleach mór,Stercorarius skua,Skua
 "[[[158 148 113]
   [158 148 113]
   [158 148 113]
@@ -3379,7 +3379,7 @@ Image,Bird_Name
   ...
   [118 101  73]
   [100  83  55]
-  [ 79  63  37]]]",Great Spotted Woodpecker
+  [ 79  63  37]]]",Great Spotted Woodpecker,Mórchnagaire breac,Dendrocopus major,Woodpeckers
 "[[[178 165 149]
   [178 165 149]
   [178 165 149]
@@ -3428,7 +3428,7 @@ Image,Bird_Name
   ...
   [176 181 117]
   [176 181 117]
-  [176 181 117]]]",Great Tit
+  [176 181 117]]]",Great Tit,Meantán mór,Parus major,Tits
 "[[[103 109 123]
   [103 109 123]
   [103 109 123]
@@ -3477,7 +3477,7 @@ Image,Bird_Name
   ...
   [ 96 100 109]
   [ 98 102 111]
-  [ 98 102 111]]]",Green Sandpiper
+  [ 98 102 111]]]",Green Sandpiper,Gobadán glas,Tringa ochropus,Sandpipers
 "[[[180 196 212]
   [180 196 212]
   [180 196 212]
@@ -3526,7 +3526,7 @@ Image,Bird_Name
   ...
   [178 196 210]
   [179 197 211]
-  [179 197 211]]]",Green-winged Teal
+  [179 197 211]]]",Green-winged Teal,Praslacha ghlaseiteach,Anas carolinensis,Ducks
 "[[[123 117 119]
   [118 112 112]
   [107 103 102]
@@ -3575,7 +3575,7 @@ Image,Bird_Name
   ...
   [ 75  71  59]
   [ 75  71  59]
-  [ 75  71  59]]]",Greenfinch
+  [ 75  71  59]]]",Greenfinch,Glasán darach,Carduelis chloris,Finches
 "[[[155 137 115]
   [168 150 128]
   [172 154 130]
@@ -3624,7 +3624,7 @@ Image,Bird_Name
   ...
   [152 159 115]
   [152 166 113]
-  [155 175 116]]]",Greenland White-fronted Goose
+  [155 175 116]]]",Greenland White-fronted Goose,Gé Bhánéadanach,Anser albifrons flavirostris,Geese
 "[[[171 175 184]
   [158 162 171]
   [144 148 157]
@@ -3673,7 +3673,7 @@ Image,Bird_Name
   ...
   [155 158 167]
   [155 158 167]
-  [155 158 167]]]",Greenshank
+  [155 158 167]]]",Greenshank,Laidhrín glas,Tringa nebularia,Sandpipers
 "[[[199 208 215]
   [175 184 191]
   [165 174 181]
@@ -3722,7 +3722,7 @@ Image,Bird_Name
   ...
   [179 171 150]
   [179 171 152]
-  [178 170 151]]]",Grey Heron
+  [178 170 151]]]",Grey Heron,Corr réisc,Ardea cinerea,Grey Heron
 "[[[192 183 168]
   [193 184 169]
   [194 184 172]
@@ -3771,7 +3771,7 @@ Image,Bird_Name
   ...
   [202 184 184]
   [198 178 179]
-  [187 165 167]]]",Grey Partridge
+  [187 165 167]]]",Grey Partridge,Patraisc,Perdix perdix,Game Birds
 "[[[133 127 129]
   [133 127 129]
   [133 127 129]
@@ -3820,7 +3820,7 @@ Image,Bird_Name
   ...
   [120 110 100]
   [119 109  99]
-  [119 109  99]]]",Grey Phalarope
+  [119 109  99]]]",Grey Phalarope,Falaróp gobmhór,Phalaropus fulicarius,Phalarope
 "[[[161 169 171]
   [133 141 143]
   [134 142 144]
@@ -3869,7 +3869,7 @@ Image,Bird_Name
   ...
   [149 158 157]
   [145 154 153]
-  [172 181 180]]]",Grey Plover
+  [172 181 180]]]",Grey Plover,Feadóg ghlas,Pluvialis squatarola,Plovers
 "[[[146 179 224]
   [146 179 224]
   [146 179 224]
@@ -3918,7 +3918,7 @@ Image,Bird_Name
   ...
   [119 157 202]
   [119 157 202]
-  [120 158 203]]]",Grey Wagtail
+  [120 158 203]]]",Grey Wagtail,Glasóg liath,Motacilla cinerea,Wagtails
 "[[[62 51 49]
   [62 51 49]
   [63 52 50]
@@ -3967,7 +3967,7 @@ Image,Bird_Name
   ...
   [ 1  1  1]
   [ 0  0  0]
-  [ 0  0  0]]]",Greylag Goose
+  [ 0  0  0]]]",Greylag Goose,Gé Ghlas,Anser anser,Geese
 "[[[ 77  69  66]
   [ 72  64  61]
   [ 68  65  60]
@@ -4016,7 +4016,7 @@ Image,Bird_Name
   ...
   [174 175 170]
   [175 178 171]
-  [174 177 170]]]",Guillemot
+  [174 177 170]]]",Guillemot,Foracha,Uria aalge,Auks
 "[[[215 218 225]
   [215 218 225]
   [215 218 225]
@@ -4065,7 +4065,7 @@ Image,Bird_Name
   ...
   [195 199 208]
   [195 199 208]
-  [195 199 208]]]",Hen Harrier
+  [195 199 208]]]",Hen Harrier,Cromán na gCearc,Circus cyaneus,Raptors
 "[[[ 78  92 105]
   [ 78  92 105]
   [ 78  92 105]
@@ -4114,7 +4114,7 @@ Image,Bird_Name
   ...
   [ 24  35  37]
   [ 28  39  41]
-  [ 32  43  45]]]",Herring Gull
+  [ 32  43  45]]]",Herring Gull,Faoileán scadán,Larus argentatus,Gulls
 "[[[104 128 154]
   [104 128 154]
   [104 128 154]
@@ -4163,7 +4163,7 @@ Image,Bird_Name
   ...
   [104 114 139]
   [104 114 139]
-  [104 114 139]]]",Hooded Crow
+  [104 114 139]]]",Hooded Crow,Caróg liath,Corvus cornix,Crows
 "[[[  1   9  12]
   [  0   5   9]
   [  1   6   9]
@@ -4212,7 +4212,7 @@ Image,Bird_Name
   ...
   [ 56 121 175]
   [ 56 121 175]
-  [ 56 121 175]]]",House Martin
+  [ 56 121 175]]]",House Martin,Gabhlán Binne,Delichon urbicum,Swallows & Martins
 "[[[205 204 200]
   [205 204 200]
   [205 204 200]
@@ -4261,7 +4261,7 @@ Image,Bird_Name
   ...
   [168 156 158]
   [184 173 171]
-  [190 179 175]]]",House Sparrow
+  [190 179 175]]]",House Sparrow,Gealbhan binne,Passer domesticus,Sparrows
 "[[[105 124  58]
   [106 125  59]
   [106 126  57]
@@ -4310,7 +4310,7 @@ Image,Bird_Name
   ...
   [117 111 121]
   [150 147 156]
-  [162 159 168]]]",Iceland Gull
+  [162 159 168]]]",Iceland Gull,Faoileán Íoslannach,Larus glaucoides,White-headed Gulls
 "[[[11 10  8]
   [12 11  9]
   [12 11  9]
@@ -4359,7 +4359,7 @@ Image,Bird_Name
   ...
   [22 22 24]
   [19 20 22]
-  [18 19 21]]]",Jack Snipe
+  [18 19 21]]]",Jack Snipe,Naoscach bhídeach,Lymnocryptes minimus,Waders
 "[[[196 197 137]
   [196 197 137]
   [197 198 138]
@@ -4408,7 +4408,7 @@ Image,Bird_Name
   ...
   [167 181  94]
   [198 211 141]
-  [172 186 127]]]",Jackdaw
+  [172 186 127]]]",Jackdaw,Cág,Corvus monedula,Crows
 "[[[127 167  32]
   [123 163  31]
   [118 156  34]
@@ -4457,7 +4457,7 @@ Image,Bird_Name
   ...
   [103 134  14]
   [101 130  12]
-  [100 127  10]]]",Jay
+  [100 127  10]]]",Jay,Scréachóg / Scréachóg choille,Garrulus glandarius,Crows
 "[[[ 97 143 195]
   [ 97 143 195]
   [ 97 143 195]
@@ -4506,7 +4506,7 @@ Image,Bird_Name
   ...
   [ 96 144 192]
   [ 97 145 193]
-  [ 98 146 194]]]",Kestrel
+  [ 98 146 194]]]",Kestrel,Pocaire gaoithe,Falco tinnunculus,Raptors
 "[[[160 193  80]
   [160 193  80]
   [160 193  80]
@@ -4555,7 +4555,7 @@ Image,Bird_Name
   ...
   [160 195  95]
   [162 197  97]
-  [164 199  99]]]",Kingfisher
+  [164 199  99]]]",Kingfisher,Cruidín,Alcedo atthis,Kingfisher
 "[[[ 81  97  96]
   [ 81  97  96]
   [ 81  97  96]
@@ -4604,7 +4604,7 @@ Image,Bird_Name
   ...
   [ 96  90  64]
   [ 85  85  61]
-  [ 75  75  51]]]",Kittiwake
+  [ 75  75  51]]]",Kittiwake,Saidhbhéar,Rissa tridactyla,White-headed Gulls
 "[[[173 184 180]
   [175 186 182]
   [177 188 184]
@@ -4653,7 +4653,7 @@ Image,Bird_Name
   ...
   [178 177 149]
   [180 179 151]
-  [172 171 143]]]",Knot
+  [172 171 143]]]",Knot,Cnota,Calidris canutus,Sandpipers
 "[[[111 123  51]
   [111 123  51]
   [111 123  51]
@@ -4702,7 +4702,7 @@ Image,Bird_Name
   ...
   [154 162  79]
   [154 162  79]
-  [153 161  78]]]",Lapwing
+  [153 161  78]]]",Lapwing,Pilibín,Vanellus vanellus,Plovers
 "[[[174 176 175]
   [174 176 175]
   [174 176 175]
@@ -4751,7 +4751,7 @@ Image,Bird_Name
   ...
   [208 209 213]
   [208 209 213]
-  [208 209 213]]]",Leach's Petrel
+  [208 209 213]]]",Leach's Petrel,Guairdeall gabhlach,Oceanodroma leucorhoa,Tubenoses
 "[[[154 188 216]
   [154 188 216]
   [154 188 216]
@@ -4800,7 +4800,7 @@ Image,Bird_Name
   ...
   [167 195 219]
   [170 195 225]
-  [170 195 225]]]",Lesser Black-backed Gull
+  [170 195 225]]]",Lesser Black-backed Gull,Droimneach beag,Larus fuscus,White-headed Gulls
 "[[[ 93 108  69]
   [ 95 110  71]
   [ 96 111  72]
@@ -4849,7 +4849,7 @@ Image,Bird_Name
   ...
   [130 130  78]
   [130 130  78]
-  [130 130  78]]]",Lesser Redpoll
+  [130 130  78]]]",Lesser Redpoll,Deargéadan,Carduelis flammea cabaret,Finches
 "[[[ 71  65  67]
   [ 69  63  65]
   [ 68  62  64]
@@ -4898,7 +4898,7 @@ Image,Bird_Name
   ...
   [144 113  93]
   [146 115  95]
-  [148 117  97]]]",Lesser Whitethroat
+  [148 117  97]]]",Lesser Whitethroat,Gilphíb bheag,Sylvia curruca,Warblers
 "[[[150 160 149]
   [150 160 149]
   [150 160 149]
@@ -4947,7 +4947,7 @@ Image,Bird_Name
   ...
   [154 141  97]
   [152 139  95]
-  [151 138  94]]]",Linnet
+  [151 138  94]]]",Linnet,Gleoiseach,Carduelis cannabina,Finches
 "[[[137 159 180]
   [106 128 149]
   [108 130 151]
@@ -4996,7 +4996,7 @@ Image,Bird_Name
   ...
   [134 157 173]
   [134 157 173]
-  [158 181 197]]]",Little Egret
+  [158 181 197]]]",Little Egret,Éigrit bheag,Egretta garzetta,Cormorants (Egrets)
 "[[[136 164 203]
   [108 136 175]
   [110 138 177]
@@ -5045,7 +5045,7 @@ Image,Bird_Name
   ...
   [160 185 205]
   [164 190 207]
-  [180 203 221]]]",Little Grebe
+  [180 203 221]]]",Little Grebe,Spágaire tonn,Tachybaptus ruficollis,Grebes
 "[[[109 106 101]
   [109 106 101]
   [109 106 101]
@@ -5094,7 +5094,7 @@ Image,Bird_Name
   ...
   [129 122 112]
   [130 123 113]
-  [132 125 115]]]",Little Gull
+  [132 125 115]]]",Little Gull,Sléibhín beag,Larus minutus,Hooded Gulls
 "[[[143 126  83]
   [143 126  83]
   [143 126  83]
@@ -5143,7 +5143,7 @@ Image,Bird_Name
   ...
   [142 129  97]
   [149 134 103]
-  [149 134 103]]]",Little Ringed Plover
+  [149 134 103]]]",Little Ringed Plover,,,Plovers
 "[[[116 117 109]
   [117 118 110]
   [118 119 111]
@@ -5192,7 +5192,7 @@ Image,Bird_Name
   ...
   [106 102  64]
   [106 102  64]
-  [106 102  64]]]",Little Stint
+  [106 102  64]]]",Little Stint,Gobadáinín beag,Calidris minuta,Sandpipers
 "[[[155 142 123]
   [154 141 122]
   [153 140 121]
@@ -5241,7 +5241,7 @@ Image,Bird_Name
   ...
   [129 130 122]
   [130 131 123]
-  [132 133 125]]]",Little Tern
+  [132 133 125]]]",Little Tern,Geabhróg bheag,Sterna albifrons,Terns
 "[[[156 185 129]
   [156 185 129]
   [156 185 129]
@@ -5290,7 +5290,7 @@ Image,Bird_Name
   ...
   [196 180 164]
   [185 169 153]
-  [177 160 144]]]",Long-eared Owl
+  [177 160 144]]]",Long-eared Owl,Ceann cait,Asio otus,Owls
 "[[[26 24 12]
   [26 24 12]
   [26 24 12]
@@ -5339,7 +5339,7 @@ Image,Bird_Name
   ...
   [45 46 40]
   [43 44 38]
-  [41 42 36]]]",Long-tailed Duck
+  [41 42 36]]]",Long-tailed Duck,Lacha earrfhada,Clangula hyemalis,Ducks
 "[[[116 105  77]
   [114 103  75]
   [112 101  73]
@@ -5388,7 +5388,7 @@ Image,Bird_Name
   ...
   [ 49  49  21]
   [ 49  49  21]
-  [ 49  49  21]]]",Long-tailed Tit
+  [ 49  49  21]]]",Long-tailed Tit,Meantán earrfhada,Aegithalus caudatus,Tits
 "[[[151 134 106]
   [150 133 105]
   [149 132 104]
@@ -5437,7 +5437,7 @@ Image,Bird_Name
   ...
   [120  89  68]
   [112  84  63]
-  [110  82  61]]]",Magpie
+  [110  82  61]]]",Magpie,Snag breac,Pica pica,Crows
 "[[[119 154 192]
   [120 155 193]
   [122 157 195]
@@ -5486,7 +5486,7 @@ Image,Bird_Name
   ...
   [ 86 119 160]
   [ 84 117 158]
-  [ 82 115 156]]]",Mallard
+  [ 82 115 156]]]",Mallard,Mallard,Anas platyrhynchos,Ducks
 "[[[ 86 115 129]
   [ 87 116 130]
   [ 87 116 130]
@@ -5535,7 +5535,7 @@ Image,Bird_Name
   ...
   [ 34  52  62]
   [ 33  51  61]
-  [ 32  50  60]]]",Manx Shearwater
+  [ 32  50  60]]]",Manx Shearwater,Cánóg dhubh,Puffinus puffinus,Tubenoses
 "[[[103 138 168]
   [103 138 168]
   [103 138 168]
@@ -5584,7 +5584,7 @@ Image,Bird_Name
   ...
   [141 171 197]
   [141 171 197]
-  [141 171 197]]]",Marsh Harrier
+  [141 171 197]]]",Marsh Harrier,Cromán móna,Circus aeruginosus,Raptors
 "[[[205 236 239]
   [205 236 239]
   [205 236 239]
@@ -5633,7 +5633,7 @@ Image,Bird_Name
   ...
   [148 141  86]
   [146 139  84]
-  [142 135  80]]]",Meadow Pipit
+  [142 135  80]]]",Meadow Pipit,Riabhóg Mhóna,Anthus pratensis,Pipits
 "[[[ 57  89 127]
   [ 57  89 127]
   [ 57  89 127]
@@ -5682,7 +5682,7 @@ Image,Bird_Name
   ...
   [ 47  74 117]
   [ 47  74 117]
-  [ 47  74 117]]]",Mediterranean Gull
+  [ 47  74 117]]]",Mediterranean Gull,Sléibhín meánmhuirí,Larus melanocephalus,Hooded Gulls
 "[[[166 173 181]
   [166 173 181]
   [166 173 181]
@@ -5731,7 +5731,7 @@ Image,Bird_Name
   ...
   [159 169 171]
   [158 168 170]
-  [158 168 170]]]",Merlin
+  [158 168 170]]]",Merlin,Meirliún,Falco columbarius,Raptors
 "[[[115 156  98]
   [111 152  94]
   [105 146  88]
@@ -5780,7 +5780,7 @@ Image,Bird_Name
   ...
   [136 146 135]
   [134 144 133]
-  [131 141 132]]]",Mistle Thrush
+  [131 141 132]]]",Mistle Thrush,Smólach mór,Turdus viscivorus,Thrushes
 "[[[166 176 115]
   [168 178 117]
   [171 181 120]
@@ -5829,7 +5829,7 @@ Image,Bird_Name
   ...
   [  8  20   0]
   [  1   1   1]
-  [  1   1   1]]]",Moorhen
+  [  1   1   1]]]",Moorhen,Cearc uisce,Gallinula chloropus,Crakes & Rails
 "[[[44 39 36]
   [36 31 27]
   [57 54 49]
@@ -5878,7 +5878,7 @@ Image,Bird_Name
   ...
   [34 35 37]
   [35 36 38]
-  [36 37 39]]]",Mute Swan
+  [36 37 39]]]",Mute Swan,Eala bhalbh,Cygnus olor,Swans
 "[[[ 53 122  29]
   [ 58 131  39]
   [ 64 137  45]
@@ -5927,7 +5927,7 @@ Image,Bird_Name
   ...
   [146 183 152]
   [141 178 147]
-  [142 177 145]]]",Nightjar
+  [142 177 145]]]",Nightjar,Tuirne lín,Caprimulgus europaeus,Nightjar
 "[[[104 126 163]
   [105 127 164]
   [105 127 164]
@@ -5976,7 +5976,7 @@ Image,Bird_Name
   ...
   [156 137 105]
   [156 137 105]
-  [156 137 105]]]",Oystercatcher
+  [156 137 105]]]",Oystercatcher,Roilleach,Haematopus ostralegus,Waders
 "[[[188 190 179]
   [187 189 178]
   [187 189 178]
@@ -6025,7 +6025,7 @@ Image,Bird_Name
   ...
   [173 157 121]
   [173 157 121]
-  [173 157 121]]]",Pectoral Sandpiper
+  [173 157 121]]]",Pectoral Sandpiper,Gobadán uchtach,Calidris melanotos,Sandpipers
 "[[[  7  11   0]
   [  9  13   0]
   [  8  15   0]
@@ -6074,7 +6074,7 @@ Image,Bird_Name
   ...
   [129 129 131]
   [129 129 131]
-  [128 128 130]]]",Peregrine
+  [128 128 130]]]",Peregrine,Fabhcún gorm,Falco peregrinus,Raptors
 "[[[ 95 107   0]
   [ 97 109   0]
   [ 98 110   2]
@@ -6123,7 +6123,7 @@ Image,Bird_Name
   ...
   [ 85  98   8]
   [ 65  77   1]
-  [ 65  77   1]]]",Pheasant
+  [ 65  77   1]]]",Pheasant,Piasún,Phasianus colchicus,Game Birds
 "[[[ 45  51  17]
   [ 46  52  18]
   [ 47  53  19]
@@ -6172,7 +6172,7 @@ Image,Bird_Name
   ...
   [ 17  15   2]
   [ 12   8   0]
-  [ 26  23   8]]]",Pied Flycatcher
+  [ 26  23   8]]]",Pied Flycatcher,Cuilire alabhreac,Ficedula hypoleuca,Flycatchers (chats)
 "[[[213 203 193]
   [213 203 193]
   [213 203 193]
@@ -6221,7 +6221,7 @@ Image,Bird_Name
   ...
   [ 92 115  47]
   [ 94 117  49]
-  [ 95 118  50]]]",Pied Wagtail
+  [ 95 118  50]]]",Pied Wagtail,Glasóg shráide,Motacilla alba yarrellii,Wagtails
 "[[[140 117 101]
   [139 116 100]
   [138 115  97]
@@ -6270,7 +6270,7 @@ Image,Bird_Name
   ...
   [153 129 119]
   [152 128 116]
-  [151 128 114]]]",Pink-footed Goose
+  [151 128 114]]]",Pink-footed Goose,Gé ghobghearr,Anser brachyrhynchus,Geese
 "[[[102  91  59]
   [ 96  85  53]
   [ 91  81  46]
@@ -6319,7 +6319,7 @@ Image,Bird_Name
   ...
   [161 167 179]
   [164 170 182]
-  [159 165 177]]]",Pintail
+  [159 165 177]]]",Pintail,Biorearrach,Anas acuta,Ducks
 "[[[193 196 203]
   [193 196 203]
   [193 196 203]
@@ -6368,7 +6368,7 @@ Image,Bird_Name
   ...
   [186 188 183]
   [185 187 182]
-  [184 186 181]]]",Pochard
+  [184 186 181]]]",Pochard,Póiseard cíordhearg,Aythya ferina,Ducks
 "[[[ 71  59  45]
   [ 71  59  45]
   [ 70  58  44]
@@ -6417,7 +6417,7 @@ Image,Bird_Name
   ...
   [ 36  41   9]
   [ 36  41   9]
-  [ 36  42   8]]]",Puffin
+  [ 36  42   8]]]",Puffin,Puifín,Fratercula arctica,Auks
 "[[[82 76 54]
   [83 77 55]
   [85 77 56]
@@ -6466,7 +6466,7 @@ Image,Bird_Name
   ...
   [68 57 37]
   [66 55 35]
-  [65 54 34]]]",Purple Sandpiper
+  [65 54 34]]]",Purple Sandpiper,Gobadán cosbhuí,Calidris maritima,Sandpipers
 "[[[111 130  38]
   [102 121  29]
   [ 88 109  14]
@@ -6515,7 +6515,7 @@ Image,Bird_Name
   ...
   [125 129  78]
   [128 143  88]
-  [139 154  99]]]",Quail
+  [139 154  99]]]",Quail,Gearg,Coturnix coturnix,Game Birds
 "[[[133 134  94]
   [138 139  99]
   [148 146 107]
@@ -6564,7 +6564,7 @@ Image,Bird_Name
   ...
   [150 128  78]
   [156 133  81]
-  [156 133  81]]]",Raven
+  [156 133  81]]]",Raven,Fiach dubh,Corvus corax,Crows
 "[[[ 25  48  62]
   [ 25  48  62]
   [ 25  48  62]
@@ -6613,7 +6613,7 @@ Image,Bird_Name
   ...
   [225 222 213]
   [236 233 224]
-  [239 236 229]]]",Razorbill
+  [239 236 229]]]",Razorbill,Crosán,Alca torda,Auks
 "[[[150 102  79]
   [146  96  73]
   [148  93  73]
@@ -6662,7 +6662,7 @@ Image,Bird_Name
   ...
   [ 88  60  49]
   [ 98  68  58]
-  [100  67  58]]]",Red Grouse
+  [100  67  58]]]",Red Grouse,Cearc fhraoigh,Lagopus lagopus hibernicus,Game Birds
 "[[[101 151 204]
   [101 151 204]
   [101 151 204]
@@ -6711,7 +6711,7 @@ Image,Bird_Name
   ...
   [102 154 202]
   [101 153 201]
-  [101 153 201]]]",Red Kite
+  [101 153 201]]]",Red Kite,Cúr Rua / Préachán na gCearc,Milvus milvus,Raptors
 "[[[21 19 20]
   [21 19 20]
   [21 19 20]
@@ -6760,7 +6760,7 @@ Image,Bird_Name
   ...
   [26 22 21]
   [26 22 21]
-  [26 22 21]]]",Red-breasted Merganser
+  [26 22 21]]]",Red-breasted Merganser,Síolta rua,Mergus serrator,Ducks
 "[[[ 27  23  24]
   [ 20  16  17]
   [ 14  10  11]
@@ -6809,7 +6809,7 @@ Image,Bird_Name
   ...
   [ 83 139  28]
   [ 67 123  12]
-  [ 46 102   0]]]",Red-legged Partridge
+  [ 46 102   0]]]",Red-legged Partridge,,,Game Birds
 "[[[ 36  52  41]
   [ 35  51  41]
   [ 34  50  40]
@@ -6858,7 +6858,7 @@ Image,Bird_Name
   ...
   [135 121 108]
   [137 123 110]
-  [138 124 111]]]",Red-necked Grebe
+  [138 124 111]]]",Red-necked Grebe,Foitheach píbrua,Podiceps grisegena,Grebes
 "[[[111 170 210]
   [111 170 210]
   [111 170 210]
@@ -6907,7 +6907,7 @@ Image,Bird_Name
   ...
   [ 99 162 206]
   [ 98 162 206]
-  [ 98 162 206]]]",Red-necked Phalarope
+  [ 98 162 206]]]",Red-necked Phalarope,Falaróp gobchaol,Phalaropus lobatus,Phalarope
 "[[[ 46  51  44]
   [ 46  51  44]
   [ 47  52  45]
@@ -6956,7 +6956,7 @@ Image,Bird_Name
   ...
   [119 121 133]
   [119 121 133]
-  [120 122 134]]]",Red-throated Diver
+  [120 122 134]]]",Red-throated Diver,Lóma rua,Gavia stellata,Divers
 "[[[145 149 148]
   [145 149 148]
   [145 149 148]
@@ -7005,7 +7005,7 @@ Image,Bird_Name
   ...
   [ 75  79  90]
   [ 62  66  77]
-  [ 57  61  72]]]",Redshank
+  [ 57  61  72]]]",Redshank,Cosdeargán,Tringa totanus,Sandpipers
 "[[[26 42 16]
   [26 42 16]
   [25 41 15]
@@ -7054,7 +7054,7 @@ Image,Bird_Name
   ...
   [29 33 18]
   [29 33 18]
-  [29 33 18]]]",Redstart
+  [29 33 18]]]",Redstart,Earrdheargán,Phoenicurus phoenicurus,Chats
 "[[[109 108 116]
   [110 109 117]
   [111 110 118]
@@ -7103,7 +7103,7 @@ Image,Bird_Name
   ...
   [153 162 159]
   [182 191 190]
-  [171 179 181]]]",Redwing
+  [171 179 181]]]",Redwing,Deargán sneachta,Turdus iliacus,Thrushes
 "[[[133 145 157]
   [133 145 157]
   [133 145 157]
@@ -7152,7 +7152,7 @@ Image,Bird_Name
   ...
   [145 152 158]
   [145 152 158]
-  [145 152 158]]]",Reed Bunting
+  [145 152 158]]]",Reed Bunting,Gealóg ghiolcaí,Emberiza schoeniclus,Buntings
 "[[[143 165 142]
   [144 166 143]
   [145 168 142]
@@ -7201,7 +7201,7 @@ Image,Bird_Name
   ...
   [160 175 172]
   [159 174 171]
-  [158 173 170]]]",Reed Warbler
+  [158 173 170]]]",Reed Warbler,Ceolaire giolcaí,Acrocephalus scirpaceus,Warblers
 "[[[ 88  79  64]
   [ 87  78  63]
   [ 86  78  65]
@@ -7250,7 +7250,7 @@ Image,Bird_Name
   ...
   [ 78  79  74]
   [ 81  82  77]
-  [ 85  86  81]]]",Ring Ouzel
+  [ 85  86  81]]]",Ring Ouzel,Lon creige,Turdus torquatus,Thrushes
 "[[[42 49 57]
   [42 49 57]
   [42 49 57]
@@ -7299,7 +7299,7 @@ Image,Bird_Name
   ...
   [14 19 22]
   [14 19 22]
-  [14 19 22]]]",Ring-billed Gull
+  [14 19 22]]]",Ring-billed Gull,Faoileán bandghobach,Ring-billed Gull,Gulls
 "[[[ 89  88  86]
   [ 89  88  86]
   [ 90  89  87]
@@ -7348,7 +7348,7 @@ Image,Bird_Name
   ...
   [ 90  90  66]
   [ 91  91  67]
-  [ 92  92  68]]]",Ring-necked Duck
+  [ 92  92  68]]]",Ring-necked Duck,Lacha mhuinceach,Aythya collaris,Ducks
 "[[[119 128 135]
   [119 128 135]
   [119 128 135]
@@ -7397,7 +7397,7 @@ Image,Bird_Name
   ...
   [181 173 162]
   [181 173 162]
-  [181 173 162]]]",Ringed Plover
+  [181 173 162]]]",Ringed Plover,Feadóg chladaigh,Charadrius hiaticula,Plovers
 "[[[117  92  62]
   [117  92  62]
   [117  92  62]
@@ -7446,7 +7446,7 @@ Image,Bird_Name
   ...
   [157 159 158]
   [157 159 158]
-  [157 159 156]]]",Robin
+  [157 159 156]]]",Robin,Spideog,Erithacus rubecula,Chats
 "[[[89 93 79]
   [88 92 78]
   [86 90 76]
@@ -7495,7 +7495,7 @@ Image,Bird_Name
   ...
   [73 69 68]
   [73 69 68]
-  [74 70 69]]]",Rock Dove
+  [74 70 69]]]",Rock Dove,Colm aille,Columba livia,Pigeons & Doves
 "[[[121 154 187]
   [121 154 187]
   [121 154 187]
@@ -7544,7 +7544,7 @@ Image,Bird_Name
   ...
   [ 78 122 147]
   [ 78 122 147]
-  [ 79 123 148]]]",Rock Pipit
+  [ 79 123 148]]]",Rock Pipit,Riabhóg Chladaigh,Anthus petrosus,Pipits
 "[[[ 88  88  34]
   [ 89  89  35]
   [ 90  90  36]
@@ -7593,7 +7593,7 @@ Image,Bird_Name
   ...
   [ 87  95  44]
   [ 86  94  43]
-  [ 85  93  44]]]",Rook
+  [ 85  93  44]]]",Rook,Rúcach,Corvus frugilegus,Crows
 "[[[22 54 92]
   [22 54 92]
   [23 55 93]
@@ -7642,7 +7642,7 @@ Image,Bird_Name
   ...
   [12 36 62]
   [15 40 62]
-  [15 40 62]]]",Roseate Tern
+  [15 40 62]]]",Roseate Tern,Geabhróg rósach,Sterna dougallii,Terns
 "[[[ 65  72  38]
   [ 65  72  38]
   [ 65  72  38]
@@ -7691,7 +7691,7 @@ Image,Bird_Name
   ...
   [109 114 110]
   [109 114 110]
-  [109 114 110]]]",Ruddy Duck
+  [109 114 110]]]",Ruddy Duck,Lacha rua,Oxyura jamaicensis,Ducks
 "[[[ 72  90 100]
   [ 73  91 101]
   [ 74  92 102]
@@ -7740,7 +7740,7 @@ Image,Bird_Name
   ...
   [ 88  93  96]
   [ 89  94  97]
-  [ 88  96  98]]]",Ruff
+  [ 88  96  98]]]",Ruff,Rufachán,Philomachus pugnax,Sandpipers
 "[[[113 128 157]
   [113 128 157]
   [113 128 157]
@@ -7789,7 +7789,7 @@ Image,Bird_Name
   ...
   [105 126 155]
   [105 126 155]
-  [105 126 155]]]",Sabine’s Gull
+  [105 126 155]]]",Sabine’s Gull,Sléibhín Sabine,Xema sabini,Hooded Gulls
 "[[[162 138 102]
   [111  87  51]
   [ 90  66  30]
@@ -7838,7 +7838,7 @@ Image,Bird_Name
   ...
   [214 188 171]
   [221 195 178]
-  [226 200 183]]]",Sand Martin
+  [226 200 183]]]",Sand Martin,Gabhlán Gainimh,Riparia riparia,Swallows & Martins
 "[[[153 177 201]
   [153 177 201]
   [153 177 201]
@@ -7887,7 +7887,7 @@ Image,Bird_Name
   ...
   [ 99  97 102]
   [100  98 103]
-  [100  98 103]]]",Sanderling
+  [100  98 103]]]",Sanderling,Luathrán,Calidris alba,Sandpipers
 "[[[124 149 169]
   [124 149 169]
   [124 149 169]
@@ -7936,7 +7936,7 @@ Image,Bird_Name
   ...
   [107 108 112]
   [104 105 109]
-  [ 92  93  97]]]",Sandwich Tern
+  [ 92  93  97]]]",Sandwich Tern,Geabhróg scothdhubh,Sterna sandvicensis,Terns
 "[[[171 161 102]
   [167 157  98]
   [164 152  94]
@@ -7985,7 +7985,7 @@ Image,Bird_Name
   ...
   [172 182 184]
   [172 181 186]
-  [175 183 185]]]",Scaup
+  [175 183 185]]]",Scaup,Lacha iascán,Anas marila,Ducks
 "[[[ 69 108  51]
   [ 69 108  51]
   [ 69 108  51]
@@ -8034,7 +8034,7 @@ Image,Bird_Name
   ...
   [ 83 118  62]
   [ 83 116  63]
-  [ 83 116  63]]]",Sedge Warbler
+  [ 83 116  63]]]",Sedge Warbler,Ceolaire cíbe,Acrocephalus schoenobaenus,Warblers
 "[[[193 221 242]
   [194 222 243]
   [194 222 243]
@@ -8083,7 +8083,7 @@ Image,Bird_Name
   ...
   [193 221 242]
   [193 221 242]
-  [193 221 242]]]",Shag
+  [193 221 242]]]",Shag,Seaga,Phalacrocorax aristotelis,Cormorants
 "[[[ 62  85 116]
   [ 61  84 115]
   [ 61  84 115]
@@ -8132,7 +8132,7 @@ Image,Bird_Name
   ...
   [ 70  93 125]
   [ 70  93 125]
-  [ 70  93 125]]]",Shelduck
+  [ 70  93 125]]]",Shelduck,Seil-lacha,Tadorna tadorna,Ducks
 "[[[ 70  41  23]
   [ 71  42  24]
   [ 72  44  23]
@@ -8181,7 +8181,7 @@ Image,Bird_Name
   ...
   [ 35  31  19]
   [ 34  30  18]
-  [ 34  30  18]]]",Short-eared Owl
+  [ 34  30  18]]]",Short-eared Owl,Ulchabhán réisc,Asio flammeus,Owls
 "[[[105 117 129]
   [105 117 129]
   [105 117 129]
@@ -8230,7 +8230,7 @@ Image,Bird_Name
   ...
   [102 115 131]
   [102 115 131]
-  [103 116 132]]]",Shoveler
+  [103 116 132]]]",Shoveler,Spadalach,Anas clypeata,Ducks
 "[[[123 124 118]
   [120 121 115]
   [116 117 109]
@@ -8279,7 +8279,7 @@ Image,Bird_Name
   ...
   [165 149 160]
   [165 149 160]
-  [165 149 160]]]",Siskin
+  [165 149 160]]]",Siskin,Siscín,Carduelis spinus,Finches
 "[[[108 115  48]
   [108 115  48]
   [108 115  48]
@@ -8328,7 +8328,7 @@ Image,Bird_Name
   ...
   [ 94 101  34]
   [ 94 101  34]
-  [ 94 101  34]]]",Skylark
+  [ 94 101  34]]]",Skylark,Fuiseog,Alauda arvensis,Skylarks
 "[[[  8   3   0]
   [133 128 122]
   [161 154 146]
@@ -8377,7 +8377,7 @@ Image,Bird_Name
   ...
   [160 171 193]
   [159 170 192]
-  [158 169 191]]]",Slavonian Grebe
+  [158 169 191]]]",Slavonian Grebe,Foitheach cluasach,Podiceps auritus,Grebes
 "[[[ 88 109 136]
   [ 87 108 135]
   [ 87 108 135]
@@ -8426,7 +8426,7 @@ Image,Bird_Name
   ...
   [ 55  76 103]
   [ 54  75 102]
-  [ 55  76 103]]]",Smew
+  [ 55  76 103]]]",Smew,Síolta gheal,Mergellus albellus,Ducks
 "[[[101 144 186]
   [101 144 186]
   [101 144 186]
@@ -8475,7 +8475,7 @@ Image,Bird_Name
   ...
   [ 57  58  24]
   [ 56  57  23]
-  [ 56  58  21]]]",Snipe
+  [ 56  58  21]]]",Snipe,Naoscach,Gallinago gallinago,Waders
 "[[[129 147 159]
   [133 151 163]
   [138 156 168]
@@ -8524,7 +8524,7 @@ Image,Bird_Name
   ...
   [ 63  65  60]
   [ 63  66  59]
-  [ 65  68  61]]]",Snow Bunting
+  [ 65  68  61]]]",Snow Bunting,Gealóg shneachta,Plectrophenax nivalis,Buntings
 "[[[21 24 15]
   [22 25 16]
   [22 25 16]
@@ -8573,7 +8573,7 @@ Image,Bird_Name
   ...
   [56 57 59]
   [56 57 59]
-  [56 57 59]]]",Snow Goose
+  [56 57 59]]]",Snow Goose,Gé Shneachta,Anser caerulescens,Geese
 "[[[ 22  14  12]
   [ 22  14  12]
   [ 22  14  12]
@@ -8622,7 +8622,7 @@ Image,Bird_Name
   ...
   [ 36  55  70]
   [ 36  58  72]
-  [ 36  58  72]]]",Snowy Owl
+  [ 36  58  72]]]",Snowy Owl,Ulchabhán sneachtúil,Bubo scandiaca,Owls
 "[[[ 28  82  30]
   [ 28  82  30]
   [ 29  82  30]
@@ -8671,7 +8671,7 @@ Image,Bird_Name
   ...
   [139 180 124]
   [140 181 125]
-  [140 181 125]]]",Song Thrush
+  [140 181 125]]]",Song Thrush,Smólach ceoil,Turdus philomelos,Thrushes
 "[[[ 28  86 136]
   [ 27  83 134]
   [ 26  82 131]
@@ -8720,7 +8720,7 @@ Image,Bird_Name
   ...
   [ 10  51  83]
   [ 11  50  83]
-  [ 10  49  82]]]",Sooty Shearwater
+  [ 10  49  82]]]",Sooty Shearwater,Cánóg dhorcha,Sooty Shearwater,Tubenoses
 "[[[246 246 244]
   [246 246 244]
   [246 247 242]
@@ -8769,7 +8769,7 @@ Image,Bird_Name
   ...
   [250 244 244]
   [250 244 244]
-  [250 244 244]]]",Sparrowhawk
+  [250 244 244]]]",Sparrowhawk,Spioróg,Accipiter nisus,Raptors
 "[[[137 135 120]
   [137 135 120]
   [137 135 120]
@@ -8818,7 +8818,7 @@ Image,Bird_Name
   ...
   [160 161 147]
   [160 161 147]
-  [161 162 148]]]",Spotted Flycatcher
+  [161 162 148]]]",Spotted Flycatcher,Cuilire liath,Musciapa striata,Flycatchers (chats)
 "[[[152 162 172]
   [152 162 172]
   [152 162 172]
@@ -8867,7 +8867,7 @@ Image,Bird_Name
   ...
   [124 128 137]
   [124 128 137]
-  [123 127 138]]]",Spotted Redshank
+  [123 127 138]]]",Spotted Redshank,Cosdeargán breac,Tringa erythropus,Sandpipers
 "[[[196 200 209]
   [191 195 204]
   [187 191 200]
@@ -8916,7 +8916,7 @@ Image,Bird_Name
   ...
   [201 166  64]
   [200 162  53]
-  [191 154  40]]]",Starling
+  [191 154  40]]]",Starling,Druid,Sturnus vulgaris,Starling
 "[[[148 163 186]
   [148 163 186]
   [148 163 186]
@@ -8965,7 +8965,7 @@ Image,Bird_Name
   ...
   [184 169 146]
   [185 170 147]
-  [185 170 147]]]",Stock Dove
+  [185 170 147]]]",Stock Dove,Colm gorm,Columba oenas,Pigeons & Doves
 "[[[ 31  38   7]
   [ 33  40   9]
   [ 35  42  11]
@@ -9014,7 +9014,7 @@ Image,Bird_Name
   ...
   [ 88  80  67]
   [ 86  78  65]
-  [ 84  76  63]]]",Stonechat
+  [ 84  76  63]]]",Stonechat,Caislín cloch,Saxicola torquata,Chats
 "[[[166 172 194]
   [166 172 194]
   [166 172 194]
@@ -9063,7 +9063,7 @@ Image,Bird_Name
   ...
   [122 137 168]
   [123 137 166]
-  [123 137 166]]]",Storm Petrel
+  [123 137 166]]]",Storm Petrel,Guairdeall,Hydrobates pelagicus,Tubenoses
 "[[[ 81 107 142]
   [ 86 112 147]
   [ 91 117 152]
@@ -9112,7 +9112,7 @@ Image,Bird_Name
   ...
   [ 64  94 118]
   [ 65  95 121]
-  [ 67  97 123]]]",Surf Scoter
+  [ 67  97 123]]]",Surf Scoter,Scótar toinne,Mellanitta perspicillata,Ducks
 "[[[166 164  90]
   [166 164  90]
   [165 162  91]
@@ -9161,7 +9161,7 @@ Image,Bird_Name
   ...
   [147 146 160]
   [146 148 161]
-  [145 147 160]]]",Swallow
+  [145 147 160]]]",Swallow,Fáinleog,Hirundo rustica,Swallows & Martins
 "[[[ 86 141 197]
   [ 85 140 196]
   [ 86 138 195]
@@ -9210,7 +9210,7 @@ Image,Bird_Name
   ...
   [ 95 139 200]
   [ 96 140 201]
-  [ 91 135 196]]]",Swift
+  [ 91 135 196]]]",Swift,Gabhlán gaoithe,Apus apus,Swift
 "[[[204 208 217]
   [204 208 217]
   [204 208 217]
@@ -9259,7 +9259,7 @@ Image,Bird_Name
   ...
   [162 163 167]
   [162 163 167]
-  [162 163 167]]]",Teal
+  [162 163 167]]]",Teal,Praslacha,Anas crecca,Ducks
 "[[[130 140 139]
   [130 140 139]
   [129 139 138]
@@ -9308,7 +9308,7 @@ Image,Bird_Name
   ...
   [ 96  86  74]
   [103  93  81]
-  [113 103  93]]]",Tree Sparrow
+  [113 103  93]]]",Tree Sparrow,Gealbhainn crann,Passer montanus,Sparrows
 "[[[ 95 101  87]
   [ 96 102  88]
   [ 96 102  90]
@@ -9357,7 +9357,7 @@ Image,Bird_Name
   ...
   [ 54  58  33]
   [ 54  58  33]
-  [ 54  58  33]]]",Treecreeper
+  [ 54  58  33]]]",Treecreeper,Snag,Certhia familiaris,Treecreeper
 "[[[159 159 157]
   [159 159 157]
   [159 159 157]
@@ -9406,7 +9406,7 @@ Image,Bird_Name
   ...
   [ 98 103 109]
   [ 67  72  78]
-  [245 250 255]]]",Tufted Duck
+  [245 250 255]]]",Tufted Duck,Lacha bhadánach,Aythya fuligula,Ducks
 "[[[154 155 150]
   [154 155 150]
   [154 155 150]
@@ -9455,7 +9455,7 @@ Image,Bird_Name
   ...
   [100  99 104]
   [101 100 105]
-  [ 96  95 100]]]",Turnstone
+  [ 96  95 100]]]",Turnstone,Piardálaí trá,Arenaria interpres,Turnstone
 "[[[148 191  84]
   [147 190  83]
   [146 189  81]
@@ -9504,7 +9504,7 @@ Image,Bird_Name
   ...
   [118 145  52]
   [111 140  48]
-  [109 138  46]]]",Turtle Dove
+  [109 138  46]]]",Turtle Dove,Fearán,Streptopelia turtur,Pigeons & Doves
 "[[[156 192  70]
   [156 192  70]
   [158 193  73]
@@ -9553,7 +9553,7 @@ Image,Bird_Name
   ...
   [244 245 239]
   [240 239 234]
-  [238 237 232]]]",Twite
+  [238 237 232]]]",Twite,Gleoiseach sléibhe,Carduelis flavirostris,Finches
 "[[[131 124 105]
   [139 132 114]
   [117 110  94]
@@ -9602,7 +9602,7 @@ Image,Bird_Name
   ...
   [ 65 148 218]
   [ 61 144 214]
-  [ 56 139 209]]]",Velvet Scoter
+  [ 56 139 209]]]",Velvet Scoter,Sceadach,Mellanitta fusca,Ducks
 "[[[189 179 170]
   [208 195 186]
   [144 128 115]
@@ -9651,7 +9651,7 @@ Image,Bird_Name
   ...
   [134 135 130]
   [146 148 143]
-  [148 153 149]]]",Water Rail
+  [148 153 149]]]",Water Rail,Rálóg uisce,Rallus aquaticus,Crakes & Rails
 "[[[130 167 209]
   [131 168 210]
   [131 168 210]
@@ -9700,7 +9700,7 @@ Image,Bird_Name
   ...
   [129 166 208]
   [131 168 210]
-  [133 170 212]]]",Waxwing
+  [133 170 212]]]",Waxwing,Síodeiteach,Bombycilla garrulus,Waxwings
 "[[[148 142 108]
   [151 140 108]
   [153 139 110]
@@ -9749,7 +9749,7 @@ Image,Bird_Name
   ...
   [ 60  64  50]
   [ 43  43  35]
-  [ 35  34  29]]]",Wheatear
+  [ 35  34  29]]]",Wheatear,Clochrán,Oenanthe oenanthe,Chats
 "[[[136 142  80]
   [136 142  80]
   [136 142  80]
@@ -9798,7 +9798,7 @@ Image,Bird_Name
   ...
   [135 142  49]
   [135 142  49]
-  [134 141  48]]]",Whimbrel
+  [134 141  48]]]",Whimbrel,Crotach eanaigh,Numenius phaeopus,Waders
 "[[[130 130 104]
   [131 131 105]
   [132 132 106]
@@ -9847,7 +9847,7 @@ Image,Bird_Name
   ...
   [153 144 137]
   [159 150 143]
-  [159 150 143]]]",Whinchat
+  [159 150 143]]]",Whinchat,Caislín aitinn,Saxicola rubetra,Chats
 "[[[118 120 143]
   [118 120 143]
   [118 120 143]
@@ -9896,7 +9896,7 @@ Image,Bird_Name
   ...
   [ 89  95 121]
   [ 89  95 121]
-  [ 89  95 121]]]",White-tailed Eagle
+  [ 89  95 121]]]",White-tailed Eagle,Iolar mara,Haliaeetus albicilla,Raptors
 "[[[ 82  84  21]
   [ 81  83  20]
   [ 80  82  19]
@@ -9945,7 +9945,7 @@ Image,Bird_Name
   ...
   [ 74  71   2]
   [ 75  72   1]
-  [ 75  72   1]]]",Whitethroat
+  [ 75  72   1]]]",Whitethroat,Gilphíb,Sylvia communis,Warblers
 "[[[127 127 135]
   [128 128 136]
   [129 129 137]
@@ -9994,7 +9994,7 @@ Image,Bird_Name
   ...
   [115 111 110]
   [115 111 110]
-  [115 111 110]]]",Whooper Swan
+  [115 111 110]]]",Whooper Swan,Eala Ghlórach,Cygnus cygnus,Swans
 "[[[ 51  48  39]
   [ 46  43  34]
   [ 42  39  30]
@@ -10043,7 +10043,7 @@ Image,Bird_Name
   ...
   [ 62  62  60]
   [ 61  61  59]
-  [ 61  61  59]]]",Wigeon
+  [ 61  61  59]]]",Wigeon,Rualacha,Anas penelope,Ducks
 "[[[76 75 29]
   [76 75 29]
   [76 75 31]
@@ -10092,7 +10092,7 @@ Image,Bird_Name
   ...
   [78 68 33]
   [80 70 35]
-  [80 70 35]]]",Willow Warbler
+  [80 70 35]]]",Willow Warbler,Ceolaire sailí,Phylloscopus trochilus,Warblers
 "[[[215 208 189]
   [172 165 146]
   [172 164 145]
@@ -10141,7 +10141,7 @@ Image,Bird_Name
   ...
   [205 206 200]
   [201 202 196]
-  [236 237 232]]]",Wood Sandpiper
+  [236 237 232]]]",Wood Sandpiper,Gobadán coille,Tringa glareola,Sandpipers
 "[[[1 0 5]
   [1 0 5]
   [1 1 3]
@@ -10190,7 +10190,7 @@ Image,Bird_Name
   ...
   [0 0 0]
   [0 0 0]
-  [0 0 0]]]",Wood Warbler
+  [0 0 0]]]",Wood Warbler,Ceolaire coille,Phylloscopus sibilatrix,Warblers
 "[[[ 65  51  22]
   [ 67  53  24]
   [ 67  53  24]
@@ -10239,7 +10239,7 @@ Image,Bird_Name
   ...
   [ 85 110  52]
   [ 84 110  49]
-  [ 86 114  53]]]",Woodcock
+  [ 86 114  53]]]",Woodcock,Creabhar,Scolopax rusticola,Waders
 "[[[ 98  91  73]
   [ 98  91  73]
   [ 97  90  71]
@@ -10288,7 +10288,7 @@ Image,Bird_Name
   ...
   [130 124 126]
   [134 128 130]
-  [139 133 135]]]",Woodpigeon
+  [139 133 135]]]",Woodpigeon,Colm coille,Columba palumbus,Pigeons & Doves
 "[[[187 217 243]
   [186 216 242]
   [186 216 242]
@@ -10337,7 +10337,7 @@ Image,Bird_Name
   ...
   [ 21  19   6]
   [ 28  22   8]
-  [ 42  35  19]]]",Wren
+  [ 42  35  19]]]",Wren,Dreolín,Troglodytes troglodytes,Wrens
 "[[[127 119 108]
   [128 120 109]
   [129 121 108]
@@ -10386,7 +10386,7 @@ Image,Bird_Name
   ...
   [ 98  89  74]
   [ 98  89  72]
-  [100  91  74]]]",Yellow-browed Warbler
+  [100  91  74]]]",Yellow-browed Warbler,Ceolaire buímhalach,Phylloscopus inornatus,Warblers
 "[[[113 104  89]
   [111 102  87]
   [108  99  84]
@@ -10435,4 +10435,4 @@ Image,Bird_Name
   ...
   [ 74  68  54]
   [ 74  68  54]
-  [ 74  68  54]]]",Yellowhammer
+  [ 74  68  54]]]",Yellowhammer,Buíóg,Emberiza citrinella,Buntings
