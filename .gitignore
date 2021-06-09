@@ -16,7 +16,7 @@
 .virtual_documents
 /data/
 
-/env/
+/conda-env/
 requirements*
 
 # knitr and R markdown default cache directories
