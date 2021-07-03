@@ -1,6 +1,6 @@
 # Spatial analysis on the occurrence of Bird Flu in Ireland
 
-This analysis will investigate a dataset provided by Ireland's [Department of Agriculture, Food and the Marine](https://data.gov.ie/dataset/h5n1-wild-bird-species-identification) which contains the locations of bird species captured in Ireland from 1980-09-01 to 2020-01-27 and wild birds that are targeted for the H5N1 strain of avian flu.
+This [analysis](https://pessini.github.io/avian-flu-wild-birds-ireland/) will investigate a dataset provided by Ireland's [Department of Agriculture, Food and the Marine](https://data.gov.ie/dataset/h5n1-wild-bird-species-identification) which contains the locations of bird species captured in Ireland from 1980-09-01 to 2020-01-27 and wild birds that are targeted for the H5N1 strain of avian flu.
 
 According to the dataset's description: Avian influenza or **"Bird Flu"** is a contagious and often fatal viral disease of birds. Wild birds, particularly wild migratory water birds are considered to be the main reservoir of avian influenza viruses. There is a constant risk of avian influenza being introduced into Ireland from wild birds particularly from November onwards each year as this is when migratory birds arrive and congregate on wetlands, mixing with resident species.
 
@@ -33,4 +33,4 @@ The **aim** of this report is to map how this disease spread throughout the isla
 - What is the proportion of birds targeted with Avian Flu on each Council / County?
 - Which areas present a statistically significant presence of Bird Flu?
 
-[Notebook](https://pessini.github.io/avian-flu-wild-birds-ireland/)
+You can find the Data Analysis [here](https://pessini.github.io/avian-flu-wild-birds-ireland/).
