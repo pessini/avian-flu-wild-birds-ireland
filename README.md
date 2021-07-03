@@ -33,4 +33,9 @@ The **aim** of this report is to map how this disease spread throughout the isla
 - What is the proportion of birds targeted with Avian Flu on each Council / County?
 - Which areas present a statistically significant presence of Bird Flu?
 
-You can find the Data Analysis [here](https://pessini.github.io/avian-flu-wild-birds-ireland/).
+The Data Analysis can be visualized as a [GitHub Page](https://pessini.github.io/avian-flu-wild-birds-ireland/).
+
+---
+
+![Python version 3.9.5](https://img.shields.io/badge/python-v3.9.5-green)
+[<img src="https://img.shields.io/badge/License-MIT-blue.svg?style=plastic" title="" alt="License" width="82">](https://opensource.org/licenses/MIT)
