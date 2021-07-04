@@ -6,6 +6,8 @@ According to the dataset's description: Avian influenza or **"Bird Flu"** is a c
 
 ## In a nutshell
 
+![Choropleth map](./img/choropleth__map.png)
+
 The data shows that despite the concern about migrant wild birds carrying the "Bird Flu" virus being a potential pandemic threat, resident species have shown the highest number of infections which indicates there is a high risk of possible Bird Flu outbreaks in Ireland.
 
 November and December are the months that need extra attention as stated by Ireland's Department of Agriculture, Food and the Marine but, even during the summer (June and August), the presence of infected birds was detected with high rates of infection among captured birds.
