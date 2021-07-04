@@ -6,7 +6,7 @@ According to the dataset's description: Avian influenza or **"Bird Flu"** is a c
 
 ## In a nutshell
 
-![Choropleth map](./img/choropleth__map.png)
+![Choropleth map](/img/choropleth_map.png)
 
 The data shows that despite the concern about migrant wild birds carrying the "Bird Flu" virus being a potential pandemic threat, resident species have shown the highest number of infections which indicates there is a high risk of possible Bird Flu outbreaks in Ireland.
 
