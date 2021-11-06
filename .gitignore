@@ -19,6 +19,9 @@
 /conda-env/
 requirements*
 
+# jetbrains
+.idea/
+
 # knitr and R markdown default cache directories
 *_cache/
 /cache/
