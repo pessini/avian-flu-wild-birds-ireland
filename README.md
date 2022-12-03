@@ -1,6 +1,6 @@
 # Spatial analysis on the occurrence of Bird Flu in Ireland
 
-This [analysis](https://pessini.github.io/avian-flu-wild-birds-ireland/) will investigate a dataset provided by Ireland's [Department of Agriculture, Food and the Marine](https://data.gov.ie/dataset/h5n1-wild-bird-species-identification) which contains the locations of bird species captured in Ireland from 1980-09-01 to 2020-01-27 and wild birds that are targeted for the H5N1 strain of avian flu.
+This [analysis](https://pessini.me/avian-flu-wild-birds-ireland/) will investigate a dataset provided by Ireland's [Department of Agriculture, Food and the Marine](https://data.gov.ie/dataset/h5n1-wild-bird-species-identification) which contains the locations of bird species captured in Ireland from 1980-09-01 to 2020-01-27 and wild birds that are targeted for the H5N1 strain of avian flu.
 
 According to the dataset's description: Avian influenza or **"Bird Flu"** is a contagious and often fatal viral disease of birds. Wild birds, particularly wild migratory water birds are considered to be the main reservoir of avian influenza viruses. There is a constant risk of avian influenza being introduced into Ireland from wild birds particularly from November onwards each year as this is when migratory birds arrive and congregate on wetlands, mixing with resident species.
 
@@ -20,7 +20,7 @@ Although Sligo and Roscommon/Ros Comáin have presented the highest rate of infe
 
 To complement this risk analysis, a web scraping was performed to aggregate data from [BirdWatch Ireland](https://birdwatchireland.ie/) and spatial data about the administrative areas were provided by [Ordinance Survey Ireland](https://data-osi.opendata.arcgis.com/).
 
-The notebook along with all data collection and preprocessing can be found [here](https://pessini.github.io/avian-flu-wild-birds-ireland/Datasets.html).
+The notebook along with all data collection and preprocessing can be found [here](https://pessini.me/avian-flu-wild-birds-ireland/datasets.html).
 
 ## Objective
 
@@ -39,5 +39,5 @@ The Data Analysis can be visualized as a [GitHub Page](https://pessini.github.io
 
 ---
 
-![Python version 3.9.5](https://img.shields.io/badge/python-v3.9.5-green)
+![Python version 3.9.6](https://img.shields.io/badge/python-v3.9.6-green)
 [<img src="https://img.shields.io/badge/License-MIT-blue.svg?style=plastic" title="" alt="License" width="82">](https://opensource.org/licenses/MIT)
