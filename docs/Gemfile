@@ -4,4 +4,8 @@ source "https://rubygems.org"
 
 gemspec
 #gem 'jekyll-maps'
-gem 'jekyll-loading-lazy'
+gem "jekyll-loading-lazy"
+gem "kramdown-parser-gfm"
+# gem 'jekyll-commonmark-ghpages'
+# gem "jekyll-commonmark"
+gem "webrick", "~> 1.7"

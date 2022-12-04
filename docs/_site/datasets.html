@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
+<head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta charset="UTF-8">
-
-<!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta charset="UTF-8">
 <title>Gathering Data | Avian influenza</title>
-<meta name="generator" content="Jekyll v4.3.1">
+<meta name="generator" content="Jekyll v3.9.2">
 <meta property="og:title" content="Gathering Data">
 <meta property="og:locale" content="en_US">
 <meta name="description" content="Web Scraping to aggregate data from BirdWatch Ireland and spatial data from Ordinance Survey Ireland.">
@@ -16,43 +14,16 @@
 <meta property="og:site_name" content="Avian influenza">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary">
-<meta property="twitter:title" content="Gathering Data">
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"Web Scraping to aggregate data from BirdWatch Ireland and spatial data from Ordinance Survey Ireland.","headline":"Gathering Data","url":"http://0.0.0.0:4000/datasets.html"}</script>
-<!-- End Jekyll SEO tag -->
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;display=swap" as="style" type="text/css" crossorigin>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#157878">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="stylesheet" href="/assets/css/style.css?v=">
-    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
-<!-- Setup Google Analytics -->
-
-
-
-<!-- You can set your favicon here -->
-<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
-
-<!-- end custom head snippets -->
-
-  </head>
-  <body>
-    <a id="skip-to-content" href="#content">Skip to the content.</a>
-
-    <header class="page-header" role="banner">
-      <h1 class="project-name">Gathering Data</h1>
-      <h2 class="project-tagline">Web Scraping to aggregate data from BirdWatch Ireland and spatial data from Ordinance Survey Ireland.</h2>
-      
-        <a href="https://github.com/pessini/avian-flu-wild-birds-ireland" class="btn">View on GitHub</a>
-      
-      
-    </header>
-
-    <main id="content" class="main-content" role="main">
-      <p><a href="./">« BACK</a></p>
-
+<meta property="twitter:title" content="Gathering Data"> <script type="application/ld+json"> {"@context":"https://schema.org","@type":"WebPage","description":"Web Scraping to aggregate data from BirdWatch Ireland and spatial data from Ordinance Survey Ireland.","headline":"Gathering Data","url":"http://0.0.0.0:4000/datasets.html"}</script><link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;display=swap" as="style" type="text/css" crossorigin>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#157878">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="stylesheet" href="/assets/css/style.css?v="> <script async src="https://www.googletagmanager.com/gtag/js?id=G-0L7FM7ZJKF"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-0L7FM7ZJKF'); </script> </head>
+<body>
+<a id="skip-to-content" href="#content">Skip to the content.</a><header class="page-header" role="banner"><h1 class="project-name">Gathering Data</h1>
+<h2 class="project-tagline">Web Scraping to aggregate data from BirdWatch Ireland and spatial data from Ordinance Survey Ireland.</h2>
+<a href="https://github.com/pessini/avian-flu-wild-birds-ireland" class="btn">View on GitHub</a></header><main id="content" class="main-content" role="main"><p><a href="./">« BACK</a></p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">geopandas</span> <span class="k">as</span> <span class="n">gpd</span>
 <span class="kn">import</span> <span class="nn">json</span>
 <span class="kn">from</span> <span class="nn">pathlib</span> <span class="kn">import</span> <span class="n">Path</span>
@@ -67,17 +38,11 @@
 <span class="kn">from</span> <span class="nn">urllib</span> <span class="kn">import</span> <span class="n">parse</span>
 <span class="kn">from</span> <span class="nn">skimage</span> <span class="kn">import</span> <span class="n">io</span>
 </code></pre></div></div>
-
 <h2 id="birdwatch-ireland---species--habitat-conservation">BirdWatch Ireland - Species &amp; Habitat Conservation</h2>
-
 <p><img title="BirdWatch Ireland" src="https://raw.githubusercontent.com/pessini/avian-flu-wild-birds-ireland/main/img/BWI_logo_03_80px%402x.webp?raw=true" alt="BirdWatch Ireland" style="height:150px; padding: 15px" align="right" loading="lazy"><strong>BirdWatch Ireland</strong> is the largest independent conservation organisation in Ireland and their objective is the protection of wild birds and their habitats. They have been doing an incredible work protecting birds and biodiversity in Ireland. Check out their amazing work <a href="https://birdwatchireland.ie/our-work/">here</a>.</p>
-
 <p>The data is collected using <strong>Web Scraping</strong> technique from BirdWatch Ireland’s website. There is a <a href="https://birdwatchireland.ie/irelands-birds-birdwatch-ireland/list-of-irelands-birds/">list of Ireland’s birds</a> with detailed information on every species.</p>
-
 <p>To create our dataset and merge with the data provided by the Department of Agriculture, Food and the Marine, the focus will be on the bird’s image and common name.</p>
-
 <p><strong>Note</strong>: <code class="language-plaintext highlighter-rouge">scikit-image imread</code>: OpenCV represents images in BGR order, whereas scikit-image represents images in RGB order. To utilize OpenCV functions after downloading the image, there is a extra step which is to convert the image from RGB to BGR.</p>
-
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># div class birds-with-filters (Parent)
 # page/2/
 </span><span class="n">no_pages</span> <span class="o">=</span> <span class="mi">24</span>
@@ -147,7 +112,6 @@
 
     <span class="k">return</span> <span class="n">alls</span>
 </code></pre></div></div>
-
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">results</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="c1"># for i in range(1, no_pages+1):
 </span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">no_pages</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
@@ -158,244 +122,204 @@
 <span class="n">flatten</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">l</span><span class="p">:</span> <span class="p">[</span><span class="n">item</span> <span class="k">for</span> <span class="n">sublist</span> <span class="ow">in</span> <span class="n">l</span> <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">sublist</span><span class="p">]</span>
 <span class="n">data_webscraping</span> <span class="o">=</span> <span class="n">flatten</span><span class="p">(</span><span class="n">results</span><span class="p">)</span>
 </code></pre></div></div>
-
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">df_birds</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data_webscraping</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s">'Image'</span><span class="p">,</span><span class="s">'Bird_Name'</span><span class="p">,</span><span class="s">'Irish_Name'</span><span class="p">,</span><span class="s">'Scientific_Name'</span><span class="p">,</span><span class="s">'Bird_Family'</span><span class="p">])</span>
 <span class="n">df_birds</span><span class="p">.</span><span class="n">to_pickle</span><span class="p">(</span><span class="s">'./data/BirdWatchIreland.pkl'</span><span class="p">)</span>
 <span class="c1">#df_birds.to_csv('./data/BirdWatchIreland.csv', index=False)
 </span></code></pre></div></div>
-
 <hr>
 <h2 id="h5n1-wild-bird-species-identification">H5N1 Wild Bird Species Identification</h2>
-
 <p><img title="Department of Agriculture, Food and the Marine" src="https://raw.githubusercontent.com/pessini/avian-flu-wild-birds-ireland/main/img/department-of-agriculture-food-and-the-marine.png?raw=true" alt="Department of Agriculture, Food and the Marine" align="center" style="height:150px; padding: 15px" loading="lazy"></p>
-
 <p>Dataset provided by Ireland’s <a href="https://data.gov.ie/dataset/h5n1-wild-bird-species-identification">Department of Agriculture, Food and the Marine</a> which contains the locations of bird species captured in Ireland from 1980-09-01 to 2020-01-27 and wild birds that are targeted for the H5N1 strain of avian flu.</p>
-
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">wild_birds</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s">"./data/98696_58589762-e8f9-4bb0-9d39-09570efbad62.xls"</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s">'latin-1'</span><span class="p">)</span>
 <span class="n">birdwatch</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="n">read_pickle</span><span class="p">(</span><span class="s">'./data/BirdWatchIreland.pkl'</span><span class="p">)</span>
 <span class="n">wild_birds</span><span class="p">.</span><span class="n">head</span><span class="p">()</span>
 </code></pre></div></div>
-
 <div>
-<style scoped="">
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
+<style scoped=""> .dataframe tbody tr th:only-of-type { vertical-align: middle; } .dataframe tbody tr th { vertical-align: top; } .dataframe thead th { text-align: right; }</style>
 <table border="0" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Scientific_Name</th>
-      <th>Common_Name</th>
-      <th>Date</th>
-      <th>Year</th>
-      <th>Month</th>
-      <th>Day</th>
-      <th>Time</th>
-      <th>Country</th>
-      <th>Country_State_County</th>
-      <th>State</th>
-      <th>County</th>
-      <th>Locality</th>
-      <th>Latitude</th>
-      <th>Longitude</th>
-      <th>Parent_Species</th>
-      <th>target_H5_HPAI</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>Acrocephalus scirpaceus</td>
-      <td>Eurasian Reed Warbler</td>
-      <td>15/09/2015</td>
-      <td>2015</td>
-      <td>9</td>
-      <td>15</td>
-      <td>1100</td>
-      <td>Ireland</td>
-      <td>IE-C-GY</td>
-      <td>Connaught</td>
-      <td>Galway</td>
-      <td>Inishmore (Inis Mór)</td>
-      <td>53.1291</td>
-      <td>-9.7507</td>
-      <td>Acrocephalus scirpaceus</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>Acrocephalus scirpaceus</td>
-      <td>Eurasian Reed Warbler</td>
-      <td>15/09/2015</td>
-      <td>2015</td>
-      <td>9</td>
-      <td>15</td>
-      <td>1100</td>
-      <td>Ireland</td>
-      <td>IE-C-GY</td>
-      <td>Connaught</td>
-      <td>Galway</td>
-      <td>Inishmore (Inis Mór)</td>
-      <td>53.1291</td>
-      <td>-9.7507</td>
-      <td>Acrocephalus scirpaceus</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>Limosa haemastica</td>
-      <td>Hudsonian Godwit</td>
-      <td>15/09/2015</td>
-      <td>2015</td>
-      <td>9</td>
-      <td>15</td>
-      <td>1100</td>
-      <td>Ireland</td>
-      <td>IE-C-GY</td>
-      <td>Connaught</td>
-      <td>Galway</td>
-      <td>Inishmore (Inis Mór)</td>
-      <td>53.1291</td>
-      <td>-9.7507</td>
-      <td>Limosa haemastica</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>Limosa haemastica</td>
-      <td>Hudsonian Godwit</td>
-      <td>15/09/2015</td>
-      <td>2015</td>
-      <td>9</td>
-      <td>15</td>
-      <td>1100</td>
-      <td>Ireland</td>
-      <td>IE-C-GY</td>
-      <td>Connaught</td>
-      <td>Galway</td>
-      <td>Inishmore (Inis Mór)</td>
-      <td>53.1291</td>
-      <td>-9.7507</td>
-      <td>Limosa haemastica</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>Limosa haemastica</td>
-      <td>Hudsonian Godwit</td>
-      <td>15/09/2015</td>
-      <td>2015</td>
-      <td>9</td>
-      <td>15</td>
-      <td>1100</td>
-      <td>Ireland</td>
-      <td>IE-C-GY</td>
-      <td>Connaught</td>
-      <td>Galway</td>
-      <td>Inishmore (Inis Mór)</td>
-      <td>53.1291</td>
-      <td>-9.7507</td>
-      <td>Limosa haemastica</td>
-      <td>0</td>
-    </tr>
-  </tbody>
+<thead><tr style="text-align: right;">
+<th></th>
+<th>Scientific_Name</th>
+<th>Common_Name</th>
+<th>Date</th>
+<th>Year</th>
+<th>Month</th>
+<th>Day</th>
+<th>Time</th>
+<th>Country</th>
+<th>Country_State_County</th>
+<th>State</th>
+<th>County</th>
+<th>Locality</th>
+<th>Latitude</th>
+<th>Longitude</th>
+<th>Parent_Species</th>
+<th>target_H5_HPAI</th>
+</tr></thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>Acrocephalus scirpaceus</td>
+<td>Eurasian Reed Warbler</td>
+<td>15/09/2015</td>
+<td>2015</td>
+<td>9</td>
+<td>15</td>
+<td>1100</td>
+<td>Ireland</td>
+<td>IE-C-GY</td>
+<td>Connaught</td>
+<td>Galway</td>
+<td>Inishmore (Inis Mór)</td>
+<td>53.1291</td>
+<td>-9.7507</td>
+<td>Acrocephalus scirpaceus</td>
+<td>0</td>
+</tr>
+<tr>
+<th>1</th>
+<td>Acrocephalus scirpaceus</td>
+<td>Eurasian Reed Warbler</td>
+<td>15/09/2015</td>
+<td>2015</td>
+<td>9</td>
+<td>15</td>
+<td>1100</td>
+<td>Ireland</td>
+<td>IE-C-GY</td>
+<td>Connaught</td>
+<td>Galway</td>
+<td>Inishmore (Inis Mór)</td>
+<td>53.1291</td>
+<td>-9.7507</td>
+<td>Acrocephalus scirpaceus</td>
+<td>0</td>
+</tr>
+<tr>
+<th>2</th>
+<td>Limosa haemastica</td>
+<td>Hudsonian Godwit</td>
+<td>15/09/2015</td>
+<td>2015</td>
+<td>9</td>
+<td>15</td>
+<td>1100</td>
+<td>Ireland</td>
+<td>IE-C-GY</td>
+<td>Connaught</td>
+<td>Galway</td>
+<td>Inishmore (Inis Mór)</td>
+<td>53.1291</td>
+<td>-9.7507</td>
+<td>Limosa haemastica</td>
+<td>0</td>
+</tr>
+<tr>
+<th>3</th>
+<td>Limosa haemastica</td>
+<td>Hudsonian Godwit</td>
+<td>15/09/2015</td>
+<td>2015</td>
+<td>9</td>
+<td>15</td>
+<td>1100</td>
+<td>Ireland</td>
+<td>IE-C-GY</td>
+<td>Connaught</td>
+<td>Galway</td>
+<td>Inishmore (Inis Mór)</td>
+<td>53.1291</td>
+<td>-9.7507</td>
+<td>Limosa haemastica</td>
+<td>0</td>
+</tr>
+<tr>
+<th>4</th>
+<td>Limosa haemastica</td>
+<td>Hudsonian Godwit</td>
+<td>15/09/2015</td>
+<td>2015</td>
+<td>9</td>
+<td>15</td>
+<td>1100</td>
+<td>Ireland</td>
+<td>IE-C-GY</td>
+<td>Connaught</td>
+<td>Galway</td>
+<td>Inishmore (Inis Mór)</td>
+<td>53.1291</td>
+<td>-9.7507</td>
+<td>Limosa haemastica</td>
+<td>0</td>
+</tr>
+</tbody>
 </table>
 </div>
-
 <p><strong>JOIN</strong> the two bird datasets to link image to the specie. Using Scientific Name as key column</p>
-
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">birdwatch</span><span class="p">.</span><span class="n">head</span><span class="p">()</span>
 </code></pre></div></div>
-
 <div>
-<style scoped="">
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
+<style scoped=""> .dataframe tbody tr th:only-of-type { vertical-align: middle; } .dataframe tbody tr th { vertical-align: top; } .dataframe thead th { text-align: right; }</style>
 <table border="0" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Image</th>
-      <th>Bird_Name</th>
-      <th>Irish_Name</th>
-      <th>Scientific_Name</th>
-      <th>Bird_Family</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>[[[193, 145, 9], [189, 141, 5], [185, 137, 1],...</td>
-      <td>Arctic Tern</td>
-      <td>Geabhróg artach</td>
-      <td>Sterna paradisaea</td>
-      <td>Terns</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>[[[33, 72, 87], [35, 74, 89], [37, 76, 93], [4...</td>
-      <td>Balearic Shearwater</td>
-      <td>Cánóg Bhailéarach</td>
-      <td>Puffinus mauretanicus</td>
-      <td>Tubenoses</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>[[[52, 64, 88], [55, 67, 91], [57, 69, 93], [5...</td>
-      <td>Bar-tailed Godwit</td>
-      <td>Guilbneach stríocearrach</td>
-      <td>Limosa lapponica</td>
-      <td>Waders</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>[[[89, 78, 46], [88, 77, 45], [85, 74, 42], [8...</td>
-      <td>Barn Owl</td>
-      <td>Scréachóg reilige</td>
-      <td>Tyto alba</td>
-      <td>Owls</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>[[[130, 112, 74], [129, 111, 73], [127, 109, 7...</td>
-      <td>Barnacle Goose</td>
-      <td>Gé ghiúrainn</td>
-      <td>Branta leucopsis</td>
-      <td>Geese</td>
-    </tr>
-  </tbody>
+<thead><tr style="text-align: right;">
+<th></th>
+<th>Image</th>
+<th>Bird_Name</th>
+<th>Irish_Name</th>
+<th>Scientific_Name</th>
+<th>Bird_Family</th>
+</tr></thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>[[[193, 145, 9], [189, 141, 5], [185, 137, 1],...</td>
+<td>Arctic Tern</td>
+<td>Geabhróg artach</td>
+<td>Sterna paradisaea</td>
+<td>Terns</td>
+</tr>
+<tr>
+<th>1</th>
+<td>[[[33, 72, 87], [35, 74, 89], [37, 76, 93], [4...</td>
+<td>Balearic Shearwater</td>
+<td>Cánóg Bhailéarach</td>
+<td>Puffinus mauretanicus</td>
+<td>Tubenoses</td>
+</tr>
+<tr>
+<th>2</th>
+<td>[[[52, 64, 88], [55, 67, 91], [57, 69, 93], [5...</td>
+<td>Bar-tailed Godwit</td>
+<td>Guilbneach stríocearrach</td>
+<td>Limosa lapponica</td>
+<td>Waders</td>
+</tr>
+<tr>
+<th>3</th>
+<td>[[[89, 78, 46], [88, 77, 45], [85, 74, 42], [8...</td>
+<td>Barn Owl</td>
+<td>Scréachóg reilige</td>
+<td>Tyto alba</td>
+<td>Owls</td>
+</tr>
+<tr>
+<th>4</th>
+<td>[[[130, 112, 74], [129, 111, 73], [127, 109, 7...</td>
+<td>Barnacle Goose</td>
+<td>Gé ghiúrainn</td>
+<td>Branta leucopsis</td>
+<td>Geese</td>
+</tr>
+</tbody>
 </table>
 </div>
-
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">bird_flu</span> <span class="o">=</span> <span class="n">wild_birds</span><span class="p">.</span><span class="n">join</span><span class="p">(</span><span class="n">birdwatch</span><span class="p">.</span><span class="n">set_index</span><span class="p">(</span><span class="s">'Scientific_Name'</span><span class="p">),</span> <span class="n">on</span><span class="o">=</span><span class="s">'Scientific_Name'</span><span class="p">,</span> <span class="n">lsuffix</span><span class="o">=</span><span class="s">'_original'</span><span class="p">,</span> <span class="n">rsuffix</span><span class="o">=</span><span class="s">'_bwi'</span><span class="p">)</span>
 </code></pre></div></div>
-
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Selecting only infected birds
 </span><span class="n">infected_birds</span> <span class="o">=</span> <span class="n">bird_flu</span><span class="p">[</span><span class="n">bird_flu</span><span class="p">[</span><span class="s">'target_H5_HPAI'</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">]</span>
 <span class="n">top_infected_species</span> <span class="o">=</span> <span class="n">infected_birds</span><span class="p">.</span><span class="n">groupby</span><span class="p">(</span><span class="s">'Scientific_Name'</span><span class="p">).</span><span class="n">size</span><span class="p">().</span><span class="n">sort_values</span><span class="p">(</span><span class="n">ascending</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
 <span class="n">top_infected_species</span>
 </code></pre></div></div>
-
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Scientific_Name
 Chroicocephalus ridibundus    332
 Cygnus olor                   273
@@ -427,267 +351,202 @@ Mergus merganser               15
 Haliaeetus albicilla            4
 dtype: int64
 </code></pre></div></div>
-
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">infected_birds_new</span> <span class="o">=</span> <span class="n">top_infected_species</span><span class="p">.</span><span class="n">to_frame</span><span class="p">().</span><span class="n">join</span><span class="p">(</span><span class="n">birdwatch</span><span class="p">.</span><span class="n">set_index</span><span class="p">(</span><span class="s">'Scientific_Name'</span><span class="p">),</span> <span class="n">on</span><span class="o">=</span><span class="s">'Scientific_Name'</span><span class="p">,</span> <span class="n">lsuffix</span><span class="o">=</span><span class="s">'_original'</span><span class="p">,</span> <span class="n">rsuffix</span><span class="o">=</span><span class="s">'_bwi'</span><span class="p">)</span>
 </code></pre></div></div>
-
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">infected_birds_new</span><span class="p">[</span><span class="n">infected_birds_new</span><span class="p">.</span><span class="n">isna</span><span class="p">().</span><span class="nb">any</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)]</span>
 </code></pre></div></div>
-
 <div>
-<style scoped="">
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
+<style scoped=""> .dataframe tbody tr th:only-of-type { vertical-align: middle; } .dataframe tbody tr th { vertical-align: top; } .dataframe thead th { text-align: right; }</style>
 <table border="0" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>0</th>
-      <th>Image</th>
-      <th>Bird_Name</th>
-      <th>Irish_Name</th>
-      <th>Bird_Family</th>
-    </tr>
-    <tr>
-      <th>Scientific_Name</th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>Chroicocephalus ridibundus</th>
-      <td>332</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>Branta bernicla</th>
-      <td>63</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>Aythya marila</th>
-      <td>37</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-  </tbody>
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>0</th>
+<th>Image</th>
+<th>Bird_Name</th>
+<th>Irish_Name</th>
+<th>Bird_Family</th>
+</tr>
+<tr>
+<th>Scientific_Name</th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>Chroicocephalus ridibundus</th>
+<td>332</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr>
+<th>Branta bernicla</th>
+<td>63</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr>
+<th>Aythya marila</th>
+<td>37</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+</tbody>
 </table>
 </div>
-
 <hr>
-
 <p>There are <strong>3 species</strong> among those classified as Infected Birds which do not have image. Something might be different on those two datasets. Let’s investigate.</p>
-
 <ul>
-  <li>Chroicocephalus ridibundus</li>
-  <li>Branta bernicla</li>
-  <li>Aythya marila</li>
+<li>Chroicocephalus ridibundus</li>
+<li>Branta bernicla</li>
+<li>Aythya marila</li>
 </ul>
-
 <p><code class="language-plaintext highlighter-rouge">Chroicocephalus ridibundus</code>: have the same Common Name Black-headed Gull on both dataset but on BirdWatch Ireland’s dataset the Scientific Name is Larus ridibundus. I will switch the Scientific name so that the Join can work.</p>
-
 <hr>
-
 <p><code class="language-plaintext highlighter-rouge">Branta bernicla</code>: There are three subspecies of Brant (or Brent) Goose.</p>
 <ul>
-  <li>
+<li>
 <strong>Branta bernicla nigricans</strong> — Black-bellied Brant of extreme north-east Siberia to north central Canada.</li>
-  <li>
+<li>
 <strong>Branta bernicla bernicla</strong> — Dark-bellied Brant of northern and central Siberia.</li>
-  <li>
+<li>
 <strong>Branta bernicla hrota</strong> — Pale-bellied Brant of Canada, Greenland, Svalbard and Franz Josef Land.</li>
 </ul>
-
 <p>A fourth Brent Goose population has been recorded in Ireland, though its taxonomic status remains uncertain and it has no scientific name. It is generally known colloquially as <strong>‘Grey-bellied Brant’</strong>.</p>
-
 <p><strong>Department of Agriculture, Food and the Marine dataset</strong></p>
 <ul>
-  <li>Branta bernicla                   63</li>
-  <li>Branta bernicla hrota             45</li>
-  <li>Branta bernicla bernicla           4</li>
-  <li>Branta bernicla (Gray-bellied)     1</li>
+<li>Branta bernicla 63</li>
+<li>Branta bernicla hrota 45</li>
+<li>Branta bernicla bernicla 4</li>
+<li>Branta bernicla (Gray-bellied) 1</li>
 </ul>
-
 <p>Black-bellied Brant (<em>nigricans</em>) is very similar to Light-bellied Brent Goose (<em>hrota</em>) and care is needed to distinguish the two species. Brent Goose (Dark-bellied) and Black Brant are a rare winter visitor. As Brent Goose (Light-bellied) is the most common species in Ireland and it is easily mistaken by Black-bellied Brant (<em>nigricans</em>), I will combine Pale-bellied Brant and Black-bellied Brant.</p>
-
 <p>Sources:</p>
-
 <p><a href="https://www.waterfowl.org.uk/wildfowl/swans-geese-allies/brent-goose/">https://www.waterfowl.org.uk/wildfowl/swans-geese-allies/brent-goose/</a></p>
-
 <p><a href="https://www.birdguides.com/articles/identification/brent-geese-photo-id-guide/">https://www.birdguides.com/articles/identification/brent-geese-photo-id-guide/</a></p>
-
 <hr>
-
 <p><code class="language-plaintext highlighter-rouge">Aythya marila</code>: Greater Scaup from the Duck family is under the Scientific Name Anas marila on BirdWatch Ireland’s dataset.</p>
-
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">wild_birds_copy</span> <span class="o">=</span> <span class="n">wild_birds</span><span class="p">.</span><span class="n">copy</span><span class="p">()</span>
 <span class="n">birdwatch_copy</span> <span class="o">=</span> <span class="n">birdwatch</span><span class="p">.</span><span class="n">copy</span><span class="p">()</span>
 </code></pre></div></div>
-
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Fixing 1st issue 'Chroicocephalus ridibundus'
 </span><span class="n">birdwatch_copy</span><span class="p">[</span><span class="s">'Scientific_Name'</span><span class="p">]</span> <span class="o">=</span> <span class="n">birdwatch_copy</span><span class="p">[</span><span class="s">'Scientific_Name'</span><span class="p">].</span><span class="n">replace</span><span class="p">(</span><span class="s">'Larus ridibundus'</span><span class="p">,</span><span class="s">'Chroicocephalus ridibundus'</span><span class="p">)</span>
 </code></pre></div></div>
-
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Different Brent Geese species
 </span><span class="n">wild_birds_copy</span><span class="p">[</span><span class="n">wild_birds_copy</span><span class="p">[</span><span class="s">'Scientific_Name'</span><span class="p">].</span><span class="nb">str</span><span class="p">.</span><span class="n">startswith</span><span class="p">(</span><span class="s">'Branta bernicla'</span><span class="p">)].</span><span class="n">drop_duplicates</span><span class="p">(</span><span class="n">subset</span><span class="o">=</span><span class="s">'Common_Name'</span><span class="p">).</span><span class="n">drop</span><span class="p">([</span><span class="s">'Year'</span><span class="p">,</span> <span class="s">'Month'</span><span class="p">,</span><span class="s">'Day'</span><span class="p">,</span><span class="s">'Time'</span><span class="p">,</span><span class="s">'Country'</span><span class="p">,</span><span class="s">'Country_State_County'</span><span class="p">,</span><span class="s">'State'</span><span class="p">,</span><span class="s">'Latitude'</span><span class="p">,</span><span class="s">'Longitude'</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="s">'columns'</span><span class="p">)</span>
 </code></pre></div></div>
-
 <div>
-<style scoped="">
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
+<style scoped=""> .dataframe tbody tr th:only-of-type { vertical-align: middle; } .dataframe tbody tr th { vertical-align: top; } .dataframe thead th { text-align: right; }</style>
 <table border="0" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Scientific_Name</th>
-      <th>Common_Name</th>
-      <th>Date</th>
-      <th>County</th>
-      <th>Locality</th>
-      <th>Parent_Species</th>
-      <th>target_H5_HPAI</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>179</th>
-      <td>Branta bernicla</td>
-      <td>Brant</td>
-      <td>30/04/2016</td>
-      <td>Donegal</td>
-      <td>Donegal</td>
-      <td>Branta bernicla</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>1055</th>
-      <td>Branta bernicla hrota</td>
-      <td>Brant (Atlantic)</td>
-      <td>13/12/2016</td>
-      <td>Wexford</td>
-      <td>Wexford Wildfowl Reserve</td>
-      <td>Branta bernicla</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>6235</th>
-      <td>Branta bernicla bernicla</td>
-      <td>Brant (Dark-bellied)</td>
-      <td>03/01/2019</td>
-      <td>Galway</td>
-      <td>Barna Pier, County Galway, IE (53.249, -9.15)</td>
-      <td>Branta bernicla</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>6839</th>
-      <td>Branta bernicla (Gray-bellied)</td>
-      <td>Brant (Gray-bellied)</td>
-      <td>18/03/2019</td>
-      <td>Louth</td>
-      <td>Dundalk Bay--Lurgangreen (hide and saltmarsh)</td>
-      <td>Branta bernicla</td>
-      <td>0</td>
-    </tr>
-  </tbody>
+<thead><tr style="text-align: right;">
+<th></th>
+<th>Scientific_Name</th>
+<th>Common_Name</th>
+<th>Date</th>
+<th>County</th>
+<th>Locality</th>
+<th>Parent_Species</th>
+<th>target_H5_HPAI</th>
+</tr></thead>
+<tbody>
+<tr>
+<th>179</th>
+<td>Branta bernicla</td>
+<td>Brant</td>
+<td>30/04/2016</td>
+<td>Donegal</td>
+<td>Donegal</td>
+<td>Branta bernicla</td>
+<td>1</td>
+</tr>
+<tr>
+<th>1055</th>
+<td>Branta bernicla hrota</td>
+<td>Brant (Atlantic)</td>
+<td>13/12/2016</td>
+<td>Wexford</td>
+<td>Wexford Wildfowl Reserve</td>
+<td>Branta bernicla</td>
+<td>0</td>
+</tr>
+<tr>
+<th>6235</th>
+<td>Branta bernicla bernicla</td>
+<td>Brant (Dark-bellied)</td>
+<td>03/01/2019</td>
+<td>Galway</td>
+<td>Barna Pier, County Galway, IE (53.249, -9.15)</td>
+<td>Branta bernicla</td>
+<td>0</td>
+</tr>
+<tr>
+<th>6839</th>
+<td>Branta bernicla (Gray-bellied)</td>
+<td>Brant (Gray-bellied)</td>
+<td>18/03/2019</td>
+<td>Louth</td>
+<td>Dundalk Bay--Lurgangreen (hide and saltmarsh)</td>
+<td>Branta bernicla</td>
+<td>0</td>
+</tr>
+</tbody>
 </table>
 </div>
-
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">birdwatch_copy</span><span class="p">[</span><span class="n">birdwatch_copy</span><span class="p">[</span><span class="s">'Irish_Name'</span><span class="p">]</span> <span class="o">==</span> <span class="s">'Cadhan'</span><span class="p">]</span>
 </code></pre></div></div>
-
 <div>
-<style scoped="">
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
+<style scoped=""> .dataframe tbody tr th:only-of-type { vertical-align: middle; } .dataframe tbody tr th { vertical-align: top; } .dataframe thead th { text-align: right; }</style>
 <table border="0" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Image</th>
-      <th>Bird_Name</th>
-      <th>Irish_Name</th>
-      <th>Scientific_Name</th>
-      <th>Bird_Family</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>7</th>
-      <td>[[[36, 18, 4], [33, 15, 1], [42, 24, 10], [49,...</td>
-      <td>Black Brant</td>
-      <td>Cadhan</td>
-      <td>Branta bernicla nigricans</td>
-      <td>Geese</td>
-    </tr>
-    <tr>
-      <th>18</th>
-      <td>[[[157, 171, 184], [157, 171, 184], [156, 170,...</td>
-      <td>Brent Goose (Dark-bellied)</td>
-      <td>Cadhan</td>
-      <td>Branta bernicla bernicla</td>
-      <td>Geese</td>
-    </tr>
-    <tr>
-      <th>19</th>
-      <td>[[[153, 176, 190], [153, 176, 190], [153, 176,...</td>
-      <td>Brent Goose (Light-bellied)</td>
-      <td>Cadhan</td>
-      <td>Branta bernicla hrota</td>
-      <td>Geese</td>
-    </tr>
-  </tbody>
+<thead><tr style="text-align: right;">
+<th></th>
+<th>Image</th>
+<th>Bird_Name</th>
+<th>Irish_Name</th>
+<th>Scientific_Name</th>
+<th>Bird_Family</th>
+</tr></thead>
+<tbody>
+<tr>
+<th>7</th>
+<td>[[[36, 18, 4], [33, 15, 1], [42, 24, 10], [49,...</td>
+<td>Black Brant</td>
+<td>Cadhan</td>
+<td>Branta bernicla nigricans</td>
+<td>Geese</td>
+</tr>
+<tr>
+<th>18</th>
+<td>[[[157, 171, 184], [157, 171, 184], [156, 170,...</td>
+<td>Brent Goose (Dark-bellied)</td>
+<td>Cadhan</td>
+<td>Branta bernicla bernicla</td>
+<td>Geese</td>
+</tr>
+<tr>
+<th>19</th>
+<td>[[[153, 176, 190], [153, 176, 190], [153, 176,...</td>
+<td>Brent Goose (Light-bellied)</td>
+<td>Cadhan</td>
+<td>Branta bernicla hrota</td>
+<td>Geese</td>
+</tr>
+</tbody>
 </table>
 </div>
-
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">#infected_birds = bird_flu[bird_flu['target_H5_HPAI'] == 1]
 </span><span class="n">top_infected_species</span> <span class="o">=</span> <span class="n">wild_birds_copy</span><span class="p">.</span><span class="n">groupby</span><span class="p">(</span><span class="s">'Scientific_Name'</span><span class="p">).</span><span class="n">size</span><span class="p">().</span><span class="n">sort_values</span><span class="p">(</span><span class="n">ascending</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
 <span class="n">top_infected_species</span><span class="p">[</span><span class="n">top_infected_species</span><span class="p">.</span><span class="n">index</span><span class="p">.</span><span class="nb">str</span><span class="p">.</span><span class="n">startswith</span><span class="p">(</span><span class="s">'Branta bernicla'</span><span class="p">)]</span>
 </code></pre></div></div>
-
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Scientific_Name
 Branta bernicla                   63
 Branta bernicla hrota             45
@@ -695,273 +554,240 @@ Branta bernicla bernicla           4
 Branta bernicla (Gray-bellied)     1
 dtype: int64
 </code></pre></div></div>
-
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Fixing 2nd issue 'Branta bernicla'
 </span><span class="n">wild_birds_copy</span><span class="p">[</span><span class="s">'Scientific_Name'</span><span class="p">]</span> <span class="o">=</span> <span class="n">wild_birds_copy</span><span class="p">[</span><span class="s">'Scientific_Name'</span><span class="p">].</span><span class="n">replace</span><span class="p">([</span><span class="s">'Branta bernicla'</span><span class="p">],</span><span class="s">'Branta bernicla hrota'</span><span class="p">)</span>
 </code></pre></div></div>
-
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">birdwatch_copy</span><span class="p">[</span><span class="n">birdwatch_copy</span><span class="p">[</span><span class="s">'Bird_Family'</span><span class="p">]</span> <span class="o">==</span> <span class="s">'Ducks'</span><span class="p">]</span>
 </code></pre></div></div>
-
 <div>
-<style scoped="">
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
+<style scoped=""> .dataframe tbody tr th:only-of-type { vertical-align: middle; } .dataframe tbody tr th { vertical-align: top; } .dataframe thead th { text-align: right; }</style>
 <table border="0" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Image</th>
-      <th>Bird_Name</th>
-      <th>Irish_Name</th>
-      <th>Scientific_Name</th>
-      <th>Bird_Family</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>32</th>
-      <td>[[[179, 185, 185], [179, 185, 185], [178, 184,...</td>
-      <td>Common Scoter</td>
-      <td>Scótar</td>
-      <td>Melanitta nigra</td>
-      <td>Ducks</td>
-    </tr>
-    <tr>
-      <th>46</th>
-      <td>[[[32, 36, 45], [33, 37, 46], [34, 38, 47], [3...</td>
-      <td>Eider</td>
-      <td>Éadar</td>
-      <td>Somateria mollissima</td>
-      <td>Ducks</td>
-    </tr>
-    <tr>
-      <th>51</th>
-      <td>[[[96, 131, 163], [96, 131, 163], [96, 131, 16...</td>
-      <td>Gadwall</td>
-      <td>Gadual</td>
-      <td>Anas strepera</td>
-      <td>Ducks</td>
-    </tr>
-    <tr>
-      <th>54</th>
-      <td>[[[119, 149, 77], [120, 150, 78], [122, 149, 7...</td>
-      <td>Garganey</td>
-      <td>Praslacha shamhraidh</td>
-      <td>Anas querquedula</td>
-      <td>Ducks</td>
-    </tr>
-    <tr>
-      <th>59</th>
-      <td>[[[159, 169, 171], [158, 168, 170], [158, 168,...</td>
-      <td>Goldeneye</td>
-      <td>Órshúileach</td>
-      <td>Bucephala clangula</td>
-      <td>Ducks</td>
-    </tr>
-    <tr>
-      <th>61</th>
-      <td>[[[66, 67, 51], [69, 70, 54], [72, 73, 57], [7...</td>
-      <td>Goosander</td>
-      <td>Síolta mhór</td>
-      <td>Mergus merganser</td>
-      <td>Ducks</td>
-    </tr>
-    <tr>
-      <th>71</th>
-      <td>[[[180, 196, 212], [180, 196, 212], [180, 196,...</td>
-      <td>Green-winged Teal</td>
-      <td>Praslacha ghlaseiteach</td>
-      <td>Anas carolinensis</td>
-      <td>Ducks</td>
-    </tr>
-    <tr>
-      <th>108</th>
-      <td>[[[26, 24, 12], [26, 24, 12], [26, 24, 12], [2...</td>
-      <td>Long-tailed Duck</td>
-      <td>Lacha earrfhada</td>
-      <td>Clangula hyemalis</td>
-      <td>Ducks</td>
-    </tr>
-    <tr>
-      <th>111</th>
-      <td>[[[119, 154, 192], [120, 155, 193], [122, 157,...</td>
-      <td>Mallard</td>
-      <td>Mallard</td>
-      <td>Anas platyrhynchos</td>
-      <td>Ducks</td>
-    </tr>
-    <tr>
-      <th>128</th>
-      <td>[[[102, 91, 59], [96, 85, 53], [91, 81, 46], [...</td>
-      <td>Pintail</td>
-      <td>Biorearrach</td>
-      <td>Anas acuta</td>
-      <td>Ducks</td>
-    </tr>
-    <tr>
-      <th>129</th>
-      <td>[[[193, 196, 203], [193, 196, 203], [193, 196,...</td>
-      <td>Pochard</td>
-      <td>Póiseard cíordhearg</td>
-      <td>Aythya ferina</td>
-      <td>Ducks</td>
-    </tr>
-    <tr>
-      <th>137</th>
-      <td>[[[21, 19, 20], [21, 19, 20], [21, 19, 20], [2...</td>
-      <td>Red-breasted Merganser</td>
-      <td>Síolta rua</td>
-      <td>Mergus serrator</td>
-      <td>Ducks</td>
-    </tr>
-    <tr>
-      <th>149</th>
-      <td>[[[89, 88, 86], [89, 88, 86], [90, 89, 87], [9...</td>
-      <td>Ring-necked Duck</td>
-      <td>Lacha mhuinceach</td>
-      <td>Aythya collaris</td>
-      <td>Ducks</td>
-    </tr>
-    <tr>
-      <th>156</th>
-      <td>[[[65, 72, 38], [65, 72, 38], [65, 72, 38], [6...</td>
-      <td>Ruddy Duck</td>
-      <td>Lacha rua</td>
-      <td>Oxyura jamaicensis</td>
-      <td>Ducks</td>
-    </tr>
-    <tr>
-      <th>162</th>
-      <td>[[[171, 161, 102], [167, 157, 98], [164, 152, ...</td>
-      <td>Scaup</td>
-      <td>Lacha iascán</td>
-      <td>Anas marila</td>
-      <td>Ducks</td>
-    </tr>
-    <tr>
-      <th>165</th>
-      <td>[[[62, 85, 116], [61, 84, 115], [61, 84, 115],...</td>
-      <td>Shelduck</td>
-      <td>Seil-lacha</td>
-      <td>Tadorna tadorna</td>
-      <td>Ducks</td>
-    </tr>
-    <tr>
-      <th>167</th>
-      <td>[[[105, 117, 129], [105, 117, 129], [105, 117,...</td>
-      <td>Shoveler</td>
-      <td>Spadalach</td>
-      <td>Anas clypeata</td>
-      <td>Ducks</td>
-    </tr>
-    <tr>
-      <th>171</th>
-      <td>[[[88, 109, 136], [87, 108, 135], [87, 108, 13...</td>
-      <td>Smew</td>
-      <td>Síolta gheal</td>
-      <td>Mergellus albellus</td>
-      <td>Ducks</td>
-    </tr>
-    <tr>
-      <th>185</th>
-      <td>[[[81, 107, 142], [86, 112, 147], [91, 117, 15...</td>
-      <td>Surf Scoter</td>
-      <td>Scótar toinne</td>
-      <td>Mellanitta perspicillata</td>
-      <td>Ducks</td>
-    </tr>
-    <tr>
-      <th>188</th>
-      <td>[[[204, 208, 217], [204, 208, 217], [204, 208,...</td>
-      <td>Teal</td>
-      <td>Praslacha</td>
-      <td>Anas crecca</td>
-      <td>Ducks</td>
-    </tr>
-    <tr>
-      <th>191</th>
-      <td>[[[159, 159, 157], [159, 159, 157], [159, 159,...</td>
-      <td>Tufted Duck</td>
-      <td>Lacha bhadánach</td>
-      <td>Aythya fuligula</td>
-      <td>Ducks</td>
-    </tr>
-    <tr>
-      <th>195</th>
-      <td>[[[131, 124, 105], [139, 132, 114], [117, 110,...</td>
-      <td>Velvet Scoter</td>
-      <td>Sceadach</td>
-      <td>Mellanitta fusca</td>
-      <td>Ducks</td>
-    </tr>
-    <tr>
-      <th>204</th>
-      <td>[[[51, 48, 39], [46, 43, 34], [42, 39, 30], [4...</td>
-      <td>Wigeon</td>
-      <td>Rualacha</td>
-      <td>Anas penelope</td>
-      <td>Ducks</td>
-    </tr>
-  </tbody>
+<thead><tr style="text-align: right;">
+<th></th>
+<th>Image</th>
+<th>Bird_Name</th>
+<th>Irish_Name</th>
+<th>Scientific_Name</th>
+<th>Bird_Family</th>
+</tr></thead>
+<tbody>
+<tr>
+<th>32</th>
+<td>[[[179, 185, 185], [179, 185, 185], [178, 184,...</td>
+<td>Common Scoter</td>
+<td>Scótar</td>
+<td>Melanitta nigra</td>
+<td>Ducks</td>
+</tr>
+<tr>
+<th>46</th>
+<td>[[[32, 36, 45], [33, 37, 46], [34, 38, 47], [3...</td>
+<td>Eider</td>
+<td>Éadar</td>
+<td>Somateria mollissima</td>
+<td>Ducks</td>
+</tr>
+<tr>
+<th>51</th>
+<td>[[[96, 131, 163], [96, 131, 163], [96, 131, 16...</td>
+<td>Gadwall</td>
+<td>Gadual</td>
+<td>Anas strepera</td>
+<td>Ducks</td>
+</tr>
+<tr>
+<th>54</th>
+<td>[[[119, 149, 77], [120, 150, 78], [122, 149, 7...</td>
+<td>Garganey</td>
+<td>Praslacha shamhraidh</td>
+<td>Anas querquedula</td>
+<td>Ducks</td>
+</tr>
+<tr>
+<th>59</th>
+<td>[[[159, 169, 171], [158, 168, 170], [158, 168,...</td>
+<td>Goldeneye</td>
+<td>Órshúileach</td>
+<td>Bucephala clangula</td>
+<td>Ducks</td>
+</tr>
+<tr>
+<th>61</th>
+<td>[[[66, 67, 51], [69, 70, 54], [72, 73, 57], [7...</td>
+<td>Goosander</td>
+<td>Síolta mhór</td>
+<td>Mergus merganser</td>
+<td>Ducks</td>
+</tr>
+<tr>
+<th>71</th>
+<td>[[[180, 196, 212], [180, 196, 212], [180, 196,...</td>
+<td>Green-winged Teal</td>
+<td>Praslacha ghlaseiteach</td>
+<td>Anas carolinensis</td>
+<td>Ducks</td>
+</tr>
+<tr>
+<th>108</th>
+<td>[[[26, 24, 12], [26, 24, 12], [26, 24, 12], [2...</td>
+<td>Long-tailed Duck</td>
+<td>Lacha earrfhada</td>
+<td>Clangula hyemalis</td>
+<td>Ducks</td>
+</tr>
+<tr>
+<th>111</th>
+<td>[[[119, 154, 192], [120, 155, 193], [122, 157,...</td>
+<td>Mallard</td>
+<td>Mallard</td>
+<td>Anas platyrhynchos</td>
+<td>Ducks</td>
+</tr>
+<tr>
+<th>128</th>
+<td>[[[102, 91, 59], [96, 85, 53], [91, 81, 46], [...</td>
+<td>Pintail</td>
+<td>Biorearrach</td>
+<td>Anas acuta</td>
+<td>Ducks</td>
+</tr>
+<tr>
+<th>129</th>
+<td>[[[193, 196, 203], [193, 196, 203], [193, 196,...</td>
+<td>Pochard</td>
+<td>Póiseard cíordhearg</td>
+<td>Aythya ferina</td>
+<td>Ducks</td>
+</tr>
+<tr>
+<th>137</th>
+<td>[[[21, 19, 20], [21, 19, 20], [21, 19, 20], [2...</td>
+<td>Red-breasted Merganser</td>
+<td>Síolta rua</td>
+<td>Mergus serrator</td>
+<td>Ducks</td>
+</tr>
+<tr>
+<th>149</th>
+<td>[[[89, 88, 86], [89, 88, 86], [90, 89, 87], [9...</td>
+<td>Ring-necked Duck</td>
+<td>Lacha mhuinceach</td>
+<td>Aythya collaris</td>
+<td>Ducks</td>
+</tr>
+<tr>
+<th>156</th>
+<td>[[[65, 72, 38], [65, 72, 38], [65, 72, 38], [6...</td>
+<td>Ruddy Duck</td>
+<td>Lacha rua</td>
+<td>Oxyura jamaicensis</td>
+<td>Ducks</td>
+</tr>
+<tr>
+<th>162</th>
+<td>[[[171, 161, 102], [167, 157, 98], [164, 152, ...</td>
+<td>Scaup</td>
+<td>Lacha iascán</td>
+<td>Anas marila</td>
+<td>Ducks</td>
+</tr>
+<tr>
+<th>165</th>
+<td>[[[62, 85, 116], [61, 84, 115], [61, 84, 115],...</td>
+<td>Shelduck</td>
+<td>Seil-lacha</td>
+<td>Tadorna tadorna</td>
+<td>Ducks</td>
+</tr>
+<tr>
+<th>167</th>
+<td>[[[105, 117, 129], [105, 117, 129], [105, 117,...</td>
+<td>Shoveler</td>
+<td>Spadalach</td>
+<td>Anas clypeata</td>
+<td>Ducks</td>
+</tr>
+<tr>
+<th>171</th>
+<td>[[[88, 109, 136], [87, 108, 135], [87, 108, 13...</td>
+<td>Smew</td>
+<td>Síolta gheal</td>
+<td>Mergellus albellus</td>
+<td>Ducks</td>
+</tr>
+<tr>
+<th>185</th>
+<td>[[[81, 107, 142], [86, 112, 147], [91, 117, 15...</td>
+<td>Surf Scoter</td>
+<td>Scótar toinne</td>
+<td>Mellanitta perspicillata</td>
+<td>Ducks</td>
+</tr>
+<tr>
+<th>188</th>
+<td>[[[204, 208, 217], [204, 208, 217], [204, 208,...</td>
+<td>Teal</td>
+<td>Praslacha</td>
+<td>Anas crecca</td>
+<td>Ducks</td>
+</tr>
+<tr>
+<th>191</th>
+<td>[[[159, 159, 157], [159, 159, 157], [159, 159,...</td>
+<td>Tufted Duck</td>
+<td>Lacha bhadánach</td>
+<td>Aythya fuligula</td>
+<td>Ducks</td>
+</tr>
+<tr>
+<th>195</th>
+<td>[[[131, 124, 105], [139, 132, 114], [117, 110,...</td>
+<td>Velvet Scoter</td>
+<td>Sceadach</td>
+<td>Mellanitta fusca</td>
+<td>Ducks</td>
+</tr>
+<tr>
+<th>204</th>
+<td>[[[51, 48, 39], [46, 43, 34], [42, 39, 30], [4...</td>
+<td>Wigeon</td>
+<td>Rualacha</td>
+<td>Anas penelope</td>
+<td>Ducks</td>
+</tr>
+</tbody>
 </table>
 </div>
-
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Fixing 3rd issue 'Anas marila'
 </span><span class="n">birdwatch_copy</span><span class="p">[</span><span class="s">'Scientific_Name'</span><span class="p">]</span> <span class="o">=</span> <span class="n">birdwatch_copy</span><span class="p">[</span><span class="s">'Scientific_Name'</span><span class="p">].</span><span class="n">replace</span><span class="p">(</span><span class="s">'Anas marila'</span><span class="p">,</span><span class="s">'Aythya marila'</span><span class="p">)</span>
 </code></pre></div></div>
-
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">final_df</span> <span class="o">=</span> <span class="n">wild_birds_copy</span><span class="p">.</span><span class="n">join</span><span class="p">(</span><span class="n">birdwatch_copy</span><span class="p">.</span><span class="n">set_index</span><span class="p">(</span><span class="s">'Scientific_Name'</span><span class="p">),</span> <span class="n">on</span><span class="o">=</span><span class="s">'Scientific_Name'</span><span class="p">,</span> <span class="n">lsuffix</span><span class="o">=</span><span class="s">'_original'</span><span class="p">,</span> <span class="n">rsuffix</span><span class="o">=</span><span class="s">'_bwi'</span><span class="p">)</span>
 
 <span class="n">final_df</span><span class="p">.</span><span class="n">to_pickle</span><span class="p">(</span><span class="s">'./data/bird-flu.pkl'</span><span class="p">)</span>
 </code></pre></div></div>
-
 <hr>
-
 <h2 id="ordnance-survey-ireland-osi---irelands-national-mapping-agency">Ordnance Survey <em>Ireland</em> (OSi) - Ireland’s National Mapping Agency</h2>
-
 <p><img title="Ordnance Survey Ireland (OSi)" src="https://raw.githubusercontent.com/pessini/avian-flu-wild-birds-ireland/main/img/Logo-Colour-298x100.jpeg?raw=true" alt="Ireland’s National Mapping Agency" align="right" style="height:120px; padding: 15px" loading="lazy">The spacial data is provided by <a href="https://www.osi.ie/"><strong>Ordnance Survey <em>Ireland</em> (OSi)</strong></a> under <a href="https://creativecommons.org/licenses/by/4.0/legalcode">Creative Commons licence</a>.</p>
-
 <p>Ordnance Survey Ireland has evolved from the Ordnance Survey Office which was established in 1824, later becoming a state body under the Ordnance Survey Ireland Act 2001. Under this Act, Ordnance Survey Ireland continued its mainstream public service function of creating and maintaining the definitive mapping records of the State and also assumed the commercial function assigned to it under the Act of developing its commercial business and sales revenues.</p>
-
 <p><strong>Administrative Areas</strong> dataset generated from the <a href="https://data-osi.opendata.arcgis.com/datasets/OSi::administrative-areas-osi-national-statutory-boundaries-/about"><strong>2019 OSi National Statutory Boundary dataset</strong></a>.</p>
-
 <p>Dataset License: https://creativecommons.org/licenses/by/4.0/</p>
-
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">url_geoJSON</span> <span class="o">=</span> <span class="s">'https://opendata.arcgis.com/datasets/0d5984f732c54246bd087768223c92eb_0.geojson'</span>
 <span class="n">admin_areas_json</span> <span class="o">=</span> <span class="s">'data/Administrative_Areas_Ireland.json'</span>
 </code></pre></div></div>
-
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># GeoJSON API
 </span><span class="n">admin_areas</span> <span class="o">=</span> <span class="n">gpd</span><span class="p">.</span><span class="n">read_file</span><span class="p">(</span><span class="n">url_geoJSON</span><span class="p">,</span> <span class="n">driver</span><span class="o">=</span><span class="s">'GeoJSON'</span><span class="p">)</span>
 </code></pre></div></div>
-
 <h3 id="adding-count-of-bird-flu-occurences-on-each-administrative-area">Adding Count of bird flu occurences on each Administrative Area</h3>
-
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">avian_flu</span> <span class="o">=</span> <span class="n">wild_birds</span><span class="p">.</span><span class="n">copy</span><span class="p">()</span>
 <span class="n">avian_flu</span><span class="p">[</span><span class="s">'geometry'</span><span class="p">]</span> <span class="o">=</span> <span class="bp">None</span>
 
 <span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">avian_flu</span><span class="p">.</span><span class="n">iterrows</span><span class="p">():</span>
     <span class="n">avian_flu</span><span class="p">.</span><span class="n">loc</span><span class="p">[</span><span class="n">index</span><span class="p">,</span> <span class="s">'geometry'</span><span class="p">]</span> <span class="o">=</span> <span class="n">Point</span><span class="p">(</span><span class="n">row</span><span class="p">.</span><span class="n">Longitude</span><span class="p">,</span> <span class="n">row</span><span class="p">.</span><span class="n">Latitude</span><span class="p">)</span>
 </code></pre></div></div>
-
 <p><strong>Coordinate Reference System (CRS)</strong>: Setting a projection with Spatial Reference <a href="https://epsg.io/29902"><strong>EPSG Code</strong></a></p>
-
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">gdf_infected_birds</span> <span class="o">=</span> <span class="n">gpd</span><span class="p">.</span><span class="n">GeoDataFrame</span><span class="p">(</span><span class="n">avian_flu</span><span class="p">,</span> <span class="n">geometry</span><span class="o">=</span><span class="s">'geometry'</span><span class="p">).</span><span class="n">set_crs</span><span class="p">(</span><span class="n">epsg</span><span class="o">=</span><span class="mi">29902</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
 </code></pre></div></div>
-
 <p>On the dataset with birds’ information we have only Latitude and Longitude, so first I convert them in geometry Points to use later on a polygon operation. After that, a loop is created and for every point an intersect operation is done to check if the Point belongs to that Polygon (Administrative Area).</p>
-
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># adding Count of bird flu occurences on each Administrative Area
 </span><span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">area</span> <span class="ow">in</span> <span class="n">admin_areas</span><span class="p">.</span><span class="n">iterrows</span><span class="p">():</span>
     
@@ -973,191 +799,140 @@ dtype: int64
     <span class="n">admin_areas</span><span class="p">.</span><span class="n">loc</span><span class="p">[</span><span class="n">index</span><span class="p">,</span> <span class="s">'HEALTHY_BIRDS'</span><span class="p">]</span> <span class="o">=</span> <span class="n">count_healthy_birds</span>
     <span class="n">admin_areas</span><span class="p">.</span><span class="n">loc</span><span class="p">[</span><span class="n">index</span><span class="p">,</span> <span class="s">'INFECTED_BIRDS'</span><span class="p">]</span> <span class="o">=</span> <span class="n">count_infected_birds</span>
 </code></pre></div></div>
-
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">admin_areas</span><span class="p">.</span><span class="n">head</span><span class="p">()</span>
 </code></pre></div></div>
 <div>
-<style scoped="">
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
+<style scoped=""> .dataframe tbody tr th:only-of-type { vertical-align: middle; } .dataframe tbody tr th { vertical-align: top; } .dataframe thead th { text-align: right; }</style>
 <table border="0" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>ENGLISH</th>
-      <th>GAEILGE</th>
-      <th>CONTAE</th>
-      <th>COUNTY</th>
-      <th>PROVINCE</th>
-      <th>GUID</th>
-      <th>CENTROID_X</th>
-      <th>CENTROID_Y</th>
-      <th>AREA</th>
-      <th>CC_ID</th>
-      <th>OBJECTID</th>
-      <th>Shape__Area</th>
-      <th>Shape__Length</th>
-      <th>geometry</th>
-      <th>TOTAL_BIRDS</th>
-      <th>HEALTHY_BIRDS</th>
-      <th>INFECTED_BIRDS</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>DUBLIN CITY COUNCIL</td>
-      <td>None</td>
-      <td>Baile Átha Cliath</td>
-      <td>DUBLIN</td>
-      <td>Leinster</td>
-      <td>2ae19629-1433-13a3-e055-000000000001</td>
-      <td>716469.75</td>
-      <td>735272.06</td>
-      <td>1.283502e+08</td>
-      <td>265011</td>
-      <td>1</td>
-      <td>1.283502e+08</td>
-      <td>101493.212412</td>
-      <td>POLYGON ((-6.38258 53.33367, -6.38261 53.33370...</td>
-      <td>2161.0</td>
-      <td>1642.0</td>
-      <td>519.0</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>CORK CITY COUNCIL</td>
-      <td>None</td>
-      <td>Corcaigh</td>
-      <td>CORK</td>
-      <td>Munster</td>
-      <td>2ae19629-1434-13a3-e055-000000000001</td>
-      <td>565833.13</td>
-      <td>571933.83</td>
-      <td>1.865976e+08</td>
-      <td>45511</td>
-      <td>2</td>
-      <td>1.865976e+08</td>
-      <td>80293.730785</td>
-      <td>POLYGON ((-8.38436 51.90533, -8.38425 51.90529...</td>
-      <td>223.0</td>
-      <td>182.0</td>
-      <td>41.0</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>GALWAY CITY COUNCIL</td>
-      <td>None</td>
-      <td>Gaillimh</td>
-      <td>GALWAY</td>
-      <td>Connacht</td>
-      <td>2ae19629-1435-13a3-e055-000000000001</td>
-      <td>530067.66</td>
-      <td>726500.52</td>
-      <td>5.069505e+07</td>
-      <td>65011</td>
-      <td>3</td>
-      <td>5.069505e+07</td>
-      <td>64020.725628</td>
-      <td>MULTIPOLYGON (((-9.13605 53.26682, -9.13606 53...</td>
-      <td>989.0</td>
-      <td>730.0</td>
-      <td>259.0</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>OFFALY COUNTY COUNCIL</td>
-      <td>None</td>
-      <td>Uíbh Fhailí</td>
-      <td>OFFALY</td>
-      <td>Leinster</td>
-      <td>2ae19629-1496-13a3-e055-000000000001</td>
-      <td>631261.72</td>
-      <td>709672.35</td>
-      <td>2.000025e+09</td>
-      <td>185001</td>
-      <td>4</td>
-      <td>2.000025e+09</td>
-      <td>389927.708615</td>
-      <td>POLYGON ((-7.97902 53.33689, -7.97878 53.33684...</td>
-      <td>76.0</td>
-      <td>69.0</td>
-      <td>7.0</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>WICKLOW COUNTY COUNCIL</td>
-      <td>None</td>
-      <td>Cill Mhantáin</td>
-      <td>WICKLOW</td>
-      <td>Leinster</td>
-      <td>2ae19629-149e-13a3-e055-000000000001</td>
-      <td>707784.79</td>
-      <td>690738.10</td>
-      <td>2.025161e+09</td>
-      <td>255001</td>
-      <td>5</td>
-      <td>2.025161e+09</td>
-      <td>320629.958733</td>
-      <td>MULTIPOLYGON (((-6.14602 52.78372, -6.14607 52...</td>
-      <td>1231.0</td>
-      <td>1062.0</td>
-      <td>169.0</td>
-    </tr>
-  </tbody>
+<thead><tr style="text-align: right;">
+<th></th>
+<th>ENGLISH</th>
+<th>GAEILGE</th>
+<th>CONTAE</th>
+<th>COUNTY</th>
+<th>PROVINCE</th>
+<th>GUID</th>
+<th>CENTROID_X</th>
+<th>CENTROID_Y</th>
+<th>AREA</th>
+<th>CC_ID</th>
+<th>OBJECTID</th>
+<th>Shape__Area</th>
+<th>Shape__Length</th>
+<th>geometry</th>
+<th>TOTAL_BIRDS</th>
+<th>HEALTHY_BIRDS</th>
+<th>INFECTED_BIRDS</th>
+</tr></thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>DUBLIN CITY COUNCIL</td>
+<td>None</td>
+<td>Baile Átha Cliath</td>
+<td>DUBLIN</td>
+<td>Leinster</td>
+<td>2ae19629-1433-13a3-e055-000000000001</td>
+<td>716469.75</td>
+<td>735272.06</td>
+<td>1.283502e+08</td>
+<td>265011</td>
+<td>1</td>
+<td>1.283502e+08</td>
+<td>101493.212412</td>
+<td>POLYGON ((-6.38258 53.33367, -6.38261 53.33370...</td>
+<td>2161.0</td>
+<td>1642.0</td>
+<td>519.0</td>
+</tr>
+<tr>
+<th>1</th>
+<td>CORK CITY COUNCIL</td>
+<td>None</td>
+<td>Corcaigh</td>
+<td>CORK</td>
+<td>Munster</td>
+<td>2ae19629-1434-13a3-e055-000000000001</td>
+<td>565833.13</td>
+<td>571933.83</td>
+<td>1.865976e+08</td>
+<td>45511</td>
+<td>2</td>
+<td>1.865976e+08</td>
+<td>80293.730785</td>
+<td>POLYGON ((-8.38436 51.90533, -8.38425 51.90529...</td>
+<td>223.0</td>
+<td>182.0</td>
+<td>41.0</td>
+</tr>
+<tr>
+<th>2</th>
+<td>GALWAY CITY COUNCIL</td>
+<td>None</td>
+<td>Gaillimh</td>
+<td>GALWAY</td>
+<td>Connacht</td>
+<td>2ae19629-1435-13a3-e055-000000000001</td>
+<td>530067.66</td>
+<td>726500.52</td>
+<td>5.069505e+07</td>
+<td>65011</td>
+<td>3</td>
+<td>5.069505e+07</td>
+<td>64020.725628</td>
+<td>MULTIPOLYGON (((-9.13605 53.26682, -9.13606 53...</td>
+<td>989.0</td>
+<td>730.0</td>
+<td>259.0</td>
+</tr>
+<tr>
+<th>3</th>
+<td>OFFALY COUNTY COUNCIL</td>
+<td>None</td>
+<td>Uíbh Fhailí</td>
+<td>OFFALY</td>
+<td>Leinster</td>
+<td>2ae19629-1496-13a3-e055-000000000001</td>
+<td>631261.72</td>
+<td>709672.35</td>
+<td>2.000025e+09</td>
+<td>185001</td>
+<td>4</td>
+<td>2.000025e+09</td>
+<td>389927.708615</td>
+<td>POLYGON ((-7.97902 53.33689, -7.97878 53.33684...</td>
+<td>76.0</td>
+<td>69.0</td>
+<td>7.0</td>
+</tr>
+<tr>
+<th>4</th>
+<td>WICKLOW COUNTY COUNCIL</td>
+<td>None</td>
+<td>Cill Mhantáin</td>
+<td>WICKLOW</td>
+<td>Leinster</td>
+<td>2ae19629-149e-13a3-e055-000000000001</td>
+<td>707784.79</td>
+<td>690738.10</td>
+<td>2.025161e+09</td>
+<td>255001</td>
+<td>5</td>
+<td>2.025161e+09</td>
+<td>320629.958733</td>
+<td>MULTIPOLYGON (((-6.14602 52.78372, -6.14607 52...</td>
+<td>1231.0</td>
+<td>1062.0</td>
+<td>169.0</td>
+</tr>
+</tbody>
 </table>
 </div>
 <p><br></p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Saving the data downloaded to a local json file
 </span><span class="n">admin_areas</span><span class="p">.</span><span class="n">to_file</span><span class="p">(</span><span class="n">admin_areas_json</span><span class="p">,</span> <span class="n">driver</span><span class="o">=</span><span class="s">'GeoJSON'</span><span class="p">)</span>
 </code></pre></div></div>
-
 <p><a href="./">« BACK</a></p>
-
-
-      <footer class="site-footer">
-        
-          <!-- <span class="site-footer-owner"><a href="https://github.com/pessini/avian-flu-wild-birds-ireland">avian-flu-wild-birds-ireland</a> is maintained by <a href="https://github.com/pessini/">Leandro Pessini</a>.</span> -->
-        
-        <span class="site-footer-credits">
-          <img title="GitHub Mark" src="https://raw.githubusercontent.com/pessini/avian-flu-wild-birds-ireland/main/img/GitHub-Mark-64px.png?raw=true" style="height: 32px; padding-right: 15px" alt="GitHub Mark" align="left" loading="lazy"> 
-          <a href="https://github.com/pessini/avian-flu-wild-birds-ireland">GitHub repository</a> <br>Author: Leandro Pessini
-        </span>
-      </footer>
-    </main>
-  </body>
-
-  <script type="text/javascript">
-
-    // function detectMob() {
-    //   return ( ( window.innerWidth <= 800 ) && ( window.innerHeight <= 600 ) );
-    // }
-
-    // Using Regex (from detectmobilebrowsers.com)
-    window.mobileAndTabletCheck = function() {
-      let check = false;
-      (function(a){if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino|android|ipad|playbook|silk/i.test(a)||/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(a.substr(0,4))) check = true;})(navigator.userAgent||navigator.vendor||window.opera);
-      return check;
-    };
-
-    if (mobileAndTabletCheck()) {
-      var map_iframe = document.getElementById("iframe-map");
-      map_iframe.style.display = "none";
-    } else {
-      var map_img = document.getElementById("map-img");
-      map_img.style.display = "none";
-    }
-
-  </script>
-  
+<footer class="site-footer"> <span class="site-footer-credits"> <img title="GitHub Mark" src="https://raw.githubusercontent.com/pessini/avian-flu-wild-birds-ireland/main/img/GitHub-Mark-64px.png?raw=true" style="height: 32px; padding-right: 15px" alt="GitHub Mark" align="left" loading="lazy"> <a href="https://github.com/pessini/avian-flu-wild-birds-ireland">GitHub repository</a> <br>Author: Leandro Pessini </span></footer></main><script type="text/javascript"> window.mobileAndTabletCheck = function() { let check = false; (function(a){if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino|android|ipad|playbook|silk/i.test(a)||/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(a.substr(0,4))) check = true;})(navigator.userAgent||navigator.vendor||window.opera); return check; }; if (mobileAndTabletCheck()) { var map_iframe = document.getElementById("iframe-map"); map_iframe.style.display = "none"; } else { var map_img = document.getElementById("map-img"); map_img.style.display = "none"; } </script>
+</body>
 </html>
