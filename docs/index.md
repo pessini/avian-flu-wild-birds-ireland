@@ -6,7 +6,7 @@ description: Spatial analysis on the occurrence of Bird Flu in Ireland.
 
 ![Wild Geese](https://raw.githubusercontent.com/pessini/avian-flu-wild-birds-ireland/main/img/wild-geese-pixabay_1149609_1920.jpeg?raw=true)
 
-# Contents:
+# Table Of Contents:
 
 * [1. Introduction](#1)
 * [2. Data Visualisation](#2)
@@ -94,9 +94,11 @@ sns.palplot(['#004D44','#A39161','#F6F6F2','#FBFBFB']);
 <a id="3.1"></a>
 ## Choropleth map showing the proportion of captured birds targeted with Avian Flu in Ireland
 
+<!-- {% include choropleth_map.html %} -->
 <div class="choropleth-map">
-    <!-- <object type="text/html" data="choropleth_map.html">choropleth-map</object> -->
-    <iframe src="//pessini.me/avian-flu-wild-birds-ireland/choropleth_map.html" height="600" width="100%" allowfullscreen="" frameborder="0"></iframe>
+    <!-- <object type="text/html" data="{% include choropleth_map.html %}"></object> -->
+    <!-- <iframe src="//raw.githubusercontent.com/pessini/avian-flu-wild-birds-ireland/main/docs/choropleth_map.html" height="600" width="100%" frameborder="0" allowfullscreen="allowfullscreen"></iframe> -->
+    <iframe src="//pessini.github.io/avian-flu-wild-birds-ireland/choropleth_map.html" height="600" width="100%" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 </div>
 
 In **Roscommon/Ros Comáin** we see the highest proportion of infected birds and [Mute Swan](https://birdwatchireland.ie/birds/mute-swan/) represents almost half of the birds detected with Avian Flu.
