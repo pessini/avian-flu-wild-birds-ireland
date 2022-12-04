@@ -94,10 +94,9 @@ sns.palplot(['#004D44','#A39161','#F6F6F2','#FBFBFB']);
 <a id="3.1"></a>
 ## Choropleth map showing the proportion of captured birds targeted with Avian Flu in Ireland
 
-<!-- {% include choropleth_map.html %} -->
 <div class="choropleth-map">
-    <iframe src="choropleth_map.html" height="600" width="100%" allowfullscreen="" frameborder="0">
-    </iframe>
+    <object type="text/html" data="choropleth_map.html"></object>
+    <!-- <iframe src="choropleth_map.html" height="600" width="100%" allowfullscreen="" frameborder="0"></iframe> -->
 </div>
 
 In **Roscommon/Ros Comáin** we see the highest proportion of infected birds and [Mute Swan](https://birdwatchireland.ie/birds/mute-swan/) represents almost half of the birds detected with Avian Flu.
