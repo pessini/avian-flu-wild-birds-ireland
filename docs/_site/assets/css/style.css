@@ -669,13 +669,6 @@ a {
   height: 0;
   overflow: hidden; }
 
-.choropleth-map object {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%; }
-
 .choropleth-map iframe {
   position: absolute;
   top: 0;
