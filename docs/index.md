@@ -97,8 +97,7 @@ sns.palplot(['#004D44','#A39161','#F6F6F2','#FBFBFB']);
 <!-- {% include choropleth_map.html %} -->
 <div class="choropleth-map" id="iframe-map">
     <!-- <object type="text/html" data="{% include choropleth_map.html %}"></object> -->
-    <!-- <iframe src="//raw.githubusercontent.com/pessini/avian-flu-wild-birds-ireland/main/docs/choropleth_map.html" height="600" width="100%" frameborder="0" allowfullscreen="allowfullscreen"></iframe> -->
-    <iframe src="choropleth_map.html" height="600" width="100%" frameborder="0" allowfullscreen="allowfullscreen" loading="lazy"></iframe>
+    <!-- <iframe src="choropleth_map.html" height="600" width="100%" frameborder="0" allowfullscreen="allowfullscreen" loading="lazy"></iframe> -->
 </div>
 <div id="map-img">
     <img alt="Choropleth Map" src="https://raw.githubusercontent.com/pessini/avian-flu-wild-birds-ireland/main/img/choropleth_map.png">

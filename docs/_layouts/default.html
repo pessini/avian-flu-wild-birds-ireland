@@ -52,12 +52,18 @@ layout: compress
       return check;
     };
 
-    if (mobileAndTabletCheck()) {
-      var map_iframe = document.getElementById("iframe-map");
-      map_iframe.style.display = "none";
-    } else {
+    if (!mobileAndTabletCheck()) {
       var map_img = document.getElementById("map-img");
       map_img.style.display = "none";
+
+      var iframe = document.createElement('iframe');
+      document.getElementById("iframe-map").appendChild(iframe);
+      iframe.setAttribute("src","choropleth_map.html");
+      iframe.setAttribute("style","height:600;width:100%;");
+      iframe.setAttribute("frameborder","0");
+    } else {
+      var iframe_map = document.getElementById("iframe-map");
+      iframe_map.style.display = "none";
     }
   </script>
 </html>
