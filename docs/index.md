@@ -3,8 +3,9 @@ layout: default
 title: Avian influenza
 description: Spatial analysis on the occurrence of Bird Flu in Ireland.
 ---
-
-![Wild Geese](https://raw.githubusercontent.com/pessini/avian-flu-wild-birds-ireland/main/img/wild-geese-pixabay_1149609_1920.jpeg?raw=true)
+<div style="text-align: center;">
+    <img title="Wild Geese" src="https://raw.githubusercontent.com/pessini/avian-flu-wild-birds-ireland/main/img/wild-geese-pixabay_1149609_1920.jpeg?raw=true" alt="Wild Geese" />
+</div>
 
 # Contents:
 

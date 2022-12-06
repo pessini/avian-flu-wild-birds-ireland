@@ -602,7 +602,7 @@ a {
 .btn {
   display: inline-block;
   margin-bottom: 1rem;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.8);
   background-color: rgba(255, 255, 255, 0.08);
   border-color: rgba(255, 255, 255, 0.2);
   border-style: solid;
@@ -616,14 +616,14 @@ a {
     border-color: rgba(255, 255, 255, 0.3); }
   .btn + .btn {
     margin-left: 1rem; }
-  @media screen and (min-width: 64em) {
+  @media screen and (min-width: 125em) {
     .btn {
       padding: 0.75rem 1rem; } }
-  @media screen and (min-width: 42em) and (max-width: 64em) {
+  @media screen and (min-width: 45em) and (max-width: 125em) {
     .btn {
       padding: 0.6rem 0.9rem;
       font-size: 0.9rem; } }
-  @media screen and (max-width: 42em) {
+  @media screen and (max-width: 45em) {
     .btn {
       display: block;
       width: 100%;
@@ -636,28 +636,27 @@ a {
 .page-header {
   color: #FBFBFB;
   text-align: center;
-  background-color: #004D44;
-  background-image: linear-gradient(120deg, #10786c, #004D44); }
-  @media screen and (min-width: 64em) {
+  background-color: #10786c; }
+  @media screen and (min-width: 125em) {
     .page-header {
       padding: 2rem 6rem; } }
-  @media screen and (min-width: 42em) and (max-width: 64em) {
+  @media screen and (min-width: 45em) and (max-width: 125em) {
     .page-header {
       padding: 1.5rem 4rem; } }
-  @media screen and (max-width: 42em) {
+  @media screen and (max-width: 45em) {
     .page-header {
       padding: 1rem 1rem; } }
 
 .project-name {
   margin-top: 0;
   margin-bottom: 0.1rem; }
-  @media screen and (min-width: 64em) {
+  @media screen and (min-width: 125em) {
     .project-name {
       font-size: 3.25rem; } }
-  @media screen and (min-width: 42em) and (max-width: 64em) {
+  @media screen and (min-width: 45em) and (max-width: 125em) {
     .project-name {
       font-size: 2.25rem; } }
-  @media screen and (max-width: 42em) {
+  @media screen and (max-width: 45em) {
     .project-name {
       font-size: 1.75rem; } }
 
@@ -679,32 +678,32 @@ a {
 .project-tagline {
   margin-bottom: 2rem;
   font-weight: normal;
-  opacity: 0.7; }
-  @media screen and (min-width: 64em) {
+  opacity: 0.9; }
+  @media screen and (min-width: 125em) {
+    .project-tagline {
+      font-size: 2.25rem; } }
+  @media screen and (min-width: 45em) and (max-width: 125em) {
+    .project-tagline {
+      font-size: 1.75rem; } }
+  @media screen and (max-width: 45em) {
     .project-tagline {
       font-size: 1.25rem; } }
-  @media screen and (min-width: 42em) and (max-width: 64em) {
-    .project-tagline {
-      font-size: 1.15rem; } }
-  @media screen and (max-width: 42em) {
-    .project-tagline {
-      font-size: 1rem; } }
 
 .main-content {
   word-wrap: break-word; }
   .main-content :first-child {
     margin-top: 0; }
-  @media screen and (min-width: 64em) {
+  @media screen and (min-width: 125em) {
     .main-content {
       max-width: 64rem;
       padding: 2rem 6rem;
       margin: 0 auto;
       font-size: 1.1rem; } }
-  @media screen and (min-width: 42em) and (max-width: 64em) {
+  @media screen and (min-width: 45em) and (max-width: 125em) {
     .main-content {
       padding: 2rem 4rem;
       font-size: 1.1rem; } }
-  @media screen and (max-width: 42em) {
+  @media screen and (max-width: 45em) {
     .main-content {
       padding: 2rem 1rem;
       font-size: 1rem; } }
@@ -834,13 +833,13 @@ a {
   padding-top: 2rem;
   margin-top: 2rem;
   border-top: solid 1px #eff0f1; }
-  @media screen and (min-width: 64em) {
+  @media screen and (min-width: 125em) {
     .site-footer {
       font-size: 1rem; } }
-  @media screen and (min-width: 42em) and (max-width: 64em) {
+  @media screen and (min-width: 45em) and (max-width: 125em) {
     .site-footer {
       font-size: 1rem; } }
-  @media screen and (max-width: 42em) {
+  @media screen and (max-width: 45em) {
     .site-footer {
       font-size: 0.9rem; } }
 
