@@ -1,0 +1,31 @@
+title: Avian influenza
+description: Spatial analysis on the occurrence of Bird Flu in Ireland.
+github:
+  is_project_page: true
+  repository_url: https://github.com/pessini/avian-flu-wild-birds-ireland
+  repository_name: avian-flu-wild-birds-ireland
+  owner_name: Leandro Pessini
+  owner_url: https://github.com/pessini/
+show_downloads: false
+google_analytics: G-0L7FM7ZJKF
+theme: jekyll-theme-cayman
+# incremental: true
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
+
+plugins:
+  - jekyll-loading-lazy
+  - jekyll-seo-tag
+  # - jekyll-commonmark
+
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: all
+  ignore:
+    envs: [local]
+  blanklines: false
+  profile: false
+  startings: [html, head, body]

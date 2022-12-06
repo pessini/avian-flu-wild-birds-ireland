@@ -2,7 +2,6 @@
 *.pages
 *.pdf
 *.word
-*.yml
 
 # History files
 .Rhistory
