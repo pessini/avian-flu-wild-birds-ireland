@@ -576,7 +576,7 @@ body {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  color: #606c71; }
+  color: #444444; }
 
 #skip-to-content {
   height: 1px;
@@ -634,10 +634,10 @@ a {
         margin-left: 0; } }
 
 .page-header {
-  color: #fff;
+  color: #FBFBFB;
   text-align: center;
-  background-color: #159957;
-  background-image: linear-gradient(120deg, #155799, #159957); }
+  background-color: #004D44;
+  background-image: linear-gradient(120deg, #10786c, #004D44); }
   @media screen and (min-width: 64em) {
     .page-header {
       padding: 2rem 6rem; } }
@@ -731,7 +731,7 @@ a {
     margin-top: 2rem;
     margin-bottom: 1rem;
     font-weight: normal;
-    color: #159957; }
+    color: #004D44; }
   .main-content p {
     margin-bottom: 1em; }
   .main-content code {

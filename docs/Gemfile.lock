@@ -138,6 +138,7 @@ PLATFORMS
 DEPENDENCIES
   html-proofer (~> 3.0)
   jekyll-loading-lazy
+  jekyll-seo-tag
   jekyll-theme-cayman!
   kramdown-parser-gfm
   rubocop-github (~> 0.16)

@@ -6,7 +6,7 @@ description: Spatial analysis on the occurrence of Bird Flu in Ireland.
 
 ![Wild Geese](https://raw.githubusercontent.com/pessini/avian-flu-wild-birds-ireland/main/img/wild-geese-pixabay_1149609_1920.jpeg?raw=true)
 
-# Table Of Contents:
+# Contents:
 
 * [1. Introduction](#1)
 * [2. Data Visualisation](#2)
@@ -22,7 +22,6 @@ description: Spatial analysis on the occurrence of Bird Flu in Ireland.
 
 <a id="1"></a>
 # 1- Introduction
-
 
 <img title="Department of Agriculture, Food and the Marine" src="https://raw.githubusercontent.com/pessini/avian-flu-wild-birds-ireland/main/img/department-of-agriculture-food-and-the-marine.png?raw=true" alt="Department of Agriculture, Food and the Marine" align="right" style='height:150px; padding: 15px'> This analysis will investigate a dataset provided by Ireland's [Department of Agriculture, Food and the Marine](https://data.gov.ie/dataset/h5n1-wild-bird-species-identification) which contains the locations of bird species captured in Ireland from 1980-09-01 to 2020-01-27 and wild birds that are targeted for the H5N1 strain of avian flu.
 
