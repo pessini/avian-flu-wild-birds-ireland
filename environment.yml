@@ -1,9 +1,9 @@
 name: /Users/pessini/Dropbox/Data-Science/avian-flu-wild-birds-ireland/conda-env
 channels:
-  - defaults
   - conda-forge
-  - r
+  - defaults
 dependencies:
+  - altair=4.2.0=pyhd8ed1ab_1
   - appdirs=1.4.4=pyh9f0ad1d_0
   - appnope=0.1.2=py39h6e9494a_1
   - argon2-cffi=20.1.0=py39h89e85a6_2
@@ -24,7 +24,7 @@ dependencies:
   - bs4=4.9.3=0
   - bzip2=1.0.8=h0d85af4_4
   - c-ares=1.17.1=h0d85af4_1
-  - ca-certificates=2022.9.24=h033912b_0
+  - ca-certificates=2022.10.11=hca03da5_0
   - cairo=1.16.0=he43a7df_1008
   - certifi=2022.9.24=pyhd8ed1ab_0
   - cffi=1.14.6=py39hb71fe58_0
@@ -218,4 +218,6 @@ dependencies:
   - zipp=3.5.0=pyhd8ed1ab_0
   - zlib=1.2.11=h7795811_1010
   - zstd=1.5.0=h582d3a0_0
+  - pip:
+      - simplification==0.6.2
 prefix: /Users/pessini/Dropbox/Data-Science/avian-flu-wild-birds-ireland/conda-env
